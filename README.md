@@ -5,6 +5,9 @@
 Project to play with React + Next + Postgress and learn graphql 
 
 #INTERESTING INSTRUCTIONS USED IN THE PROJECT
+- Commant to start the server
+  - yarn watch (terminal 1) + yarn dev2 (terminal 2)
+  - Check the server in the next url: http://localhost:4000/graphql
 - Command to create a new Migration
   - npx mikro-orm migration:create
 - Postgress DB created with the mac application.
