@@ -1,25 +1,34 @@
-import { MikroORM } from '@mikro-orm/core'
 // import { Post } from './entities/Post';
-import microConfig from "./mikro-orm.config";
+import "reflect-metadata";
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import { buildSchema } from 'type-graphql';
 import { HelloResolver } from './resolvers/hello';
 import { PostResolver } from './resolvers/post';
 import { UserResolver } from './resolvers/user';
+import session from 'express-session';
+import { MikroORM } from '@mikro-orm/core';
+import microConfig from "./mikro-orm.config";
+
+import { __prod__, cookieOptions } from './constants';
 
 const main = async () => {
- const orm = await MikroORM.init(microConfig);
- await orm.getMigrator().up();
+
+  const orm = await MikroORM.init(microConfig);
+  await orm.getMigrator().up();
 
   const app = express();
+
+  app.use(
+    session(cookieOptions)
+  )
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
       resolvers: [HelloResolver, PostResolver, UserResolver],
       validate: false
     }),
-    context: () => ({ em: orm.em })
+    context: ({ req, res }) => ({ em: orm.em, req, res })
   });
 
   apolloServer.applyMiddleware({ app })
@@ -28,15 +37,11 @@ const main = async () => {
     console.log('server started on localhost:4000');
   })
 
-  /*
+
   app.get('/', (_, res) => {
     res.send('hello');
   });
 
-  const post = orm.em.create(Post, { title: 'my first post' });
-  await orm.em.persistAndFlush(post);
-  await orm.em.find(Post, {})
-  */
 }
 main().catch((err) => {
   console.log("err: ", err);
