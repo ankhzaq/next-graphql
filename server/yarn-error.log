@@ -1,19 +1,19 @@
-Arguments: 
+Arguments:
   /usr/local/Cellar/node/17.3.0/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js add reflext-metadata
 
-PATH: 
+PATH:
   /Users/zaquiel/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/zaquiel/Library/Mobile Documents/com~apple~CloudDocs/github.nosync/react-graphql/node_modules/.bin:/Applications/apache-maven-3.1.1/bin
 
-Yarn version: 
+Yarn version:
   1.22.17
 
-Node version: 
+Node version:
   17.3.0
 
-Platform: 
+Platform:
   darwin x64
 
-Trace: 
+Trace:
   Error: https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/reflext-metadata: not_found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:67029:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:140883:22)
@@ -26,16 +26,16 @@ Trace:
       at endReadableNT (node:internal/streams/readable:1343:12)
       at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
-npm manifest: 
+npm manifest:
   {
     "name": "react-graphql",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "index.tsx",
     "scripts": {
-      "dev": "nodemon dist/index.js",
+      "dev": "nodemon dist/index.tsx",
       "dev2": "nodemon --exec ts-node src/index.ts",
-      "start": "node dist/index.js",
+      "start": "node dist/index.tsx",
       "start2": "ts-node src/index.ts",
       "test": "echo \"Error: no test specified\" && exit 1",
       "watch": "tsc -w"
@@ -78,8 +78,8 @@ npm manifest:
     }
   }
 
-yarn manifest: 
+yarn manifest:
   No manifest
 
-Lockfile: 
+Lockfile:
   No lockfile
