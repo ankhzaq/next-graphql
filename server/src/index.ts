@@ -9,6 +9,7 @@ import { UserResolver } from './resolvers/user';
 import session from 'express-session';
 import { MikroORM } from '@mikro-orm/core';
 import microConfig from "./mikro-orm.config";
+import cors from 'cors';
 
 import { __prod__, cookieOptions } from './constants';
 
@@ -18,6 +19,13 @@ const main = async () => {
   await orm.getMigrator().up();
 
   const app = express();
+
+  app.use(
+    cors({
+      origin: 'http://localhost:3000',
+      credentials: true
+    })
+  )
 
   app.use(
     session(cookieOptions)
@@ -31,7 +39,7 @@ const main = async () => {
     context: ({ req, res }) => ({ em: orm.em, req, res })
   });
 
-  apolloServer.applyMiddleware({ app })
+  apolloServer.applyMiddleware({ app, cors: false })
 
   app.listen(4000, () => {
     console.log('server started on localhost:4000');
