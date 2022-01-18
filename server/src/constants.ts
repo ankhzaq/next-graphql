@@ -3,12 +3,13 @@ import Redis from 'ioredis';
 import session, { SessionOptions } from 'express-session';
 
 export const __prod__ = process.env.NODE_ENV === 'production';
+export const COOKIE_NAME = "qid";
 
 
 const RedisStore = connectRedis(session);
 
 export const cookieOptions: SessionOptions = {
-  name: 'qid',
+  name: COOKIE_NAME,
   store: new RedisStore({
     client: new Redis("127.0.0.1:6379"),
     disableTouch: true

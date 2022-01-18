@@ -1676,9 +1676,9 @@
   integrity sha1-CZsHEtgk0V4mYMIOHBbmqDgfMIw=
 
 "@types/jsonwebtoken@^8.5.0":
-  version "8.5.7"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/jsonwebtoken/-/jsonwebtoken-8.5.7.tgz#e5dd6832215c48f61c8b79cb1747abc97a337367"
-  integrity sha1-5d1oMiFcSPYci3nLF0eryXozc2c=
+  version "8.5.8"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/jsonwebtoken/-/jsonwebtoken-8.5.8.tgz#01b39711eb844777b7af1d1f2b4cf22fda1c0c44"
+  integrity sha1-AbOXEeuER3e3rx0fK0zyL9ocDEQ=
   dependencies:
     "@types/node" "*"
 
@@ -1695,9 +1695,9 @@
   integrity sha1-NB9tIkfbUo1KE927N0vNyAQG9Pg=
 
 "@types/node@*":
-  version "17.0.8"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/node/-/node-17.0.8.tgz#50d680c8a8a78fe30abe6906453b21ad8ab0ad7b"
-  integrity sha1-UNaAyKinj+MKvmkGRTshrYqwrXs=
+  version "17.0.9"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/node/-/node-17.0.9.tgz#0b7f161afb5b1cc12518d29b2cdc7175d5490628"
+  integrity sha1-C38WGvtbHMElGNKbLNxxddVJBig=
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -1742,12 +1742,20 @@
   dependencies:
     "@types/node" "*"
 
-"@urql/core@^2.3.6":
+"@urql/core@>=2.3.6", "@urql/core@^2.3.6":
   version "2.3.6"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@urql/core/-/core-2.3.6.tgz#ee0a6f8fde02251e9560c5f17dce5cd90f948552"
   integrity sha1-7gpvj94CJR6VYMXxfc5c2Q+UhVI=
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.0"
+    wonka "^4.0.14"
+
+"@urql/exchange-graphcache@^4.3.6":
+  version "4.3.6"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@urql/exchange-graphcache/-/exchange-graphcache-4.3.6.tgz#fea25b8877a704a9d65bdd29578fa6e9fd31bfa5"
+  integrity sha1-/qJbiHenBKnWW90pV4+m6f0xv6U=
+  dependencies:
+    "@urql/core" ">=2.3.6"
     wonka "^4.0.14"
 
 abort-controller@^3.0.0:
@@ -2039,9 +2047,9 @@ camelcase@^5.0.0:
   integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
 
 caniuse-lite@^1.0.30001283, caniuse-lite@^1.0.30001286:
-  version "1.0.30001299"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/caniuse-lite/-/caniuse-lite-1.0.30001299.tgz#d753bf6444ed401eb503cbbe17aa3e1451b5a68c"
-  integrity sha1-11O/ZETtQB61A8u+F6o+FFG1pow=
+  version "1.0.30001300"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/caniuse-lite/-/caniuse-lite-1.0.30001300.tgz#11ab6c57d3eb6f964cba950401fd00a146786468"
+  integrity sha1-EatsV9Prb5ZMupUEAf0AoUZ4ZGg=
 
 capital-case@^1.0.4:
   version "1.0.4"
@@ -2483,9 +2491,9 @@ ecdsa-sig-formatter@1.0.11:
     safe-buffer "^5.0.1"
 
 electron-to-chromium@^1.4.17:
-  version "1.4.44"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/electron-to-chromium/-/electron-to-chromium-1.4.44.tgz#8a41923afdd6ef5ddabe001626036ba5d1d64ae6"
-  integrity sha1-ikGSOv3W713avgAWJgNrpdHWSuY=
+  version "1.4.47"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/electron-to-chromium/-/electron-to-chromium-1.4.47.tgz#5d5535cdbca2b9264abee4d6ea121995e9554bbe"
+  integrity sha1-XVU1zbyiuSZKvuTW6hIZlelVS74=
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -2561,9 +2569,9 @@ extract-files@^9.0.0:
   integrity sha1-indE8kN/gfXtMlDtnxVQ3pAv5Uo=
 
 fast-glob@^3.2.9:
-  version "3.2.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fast-glob/-/fast-glob-3.2.10.tgz#2734f83baa7f43b7fd41e13bc34438f4ffe284ee"
-  integrity sha1-JzT4O6p/Q7f9QeE7w0Q49P/ihO4=
+  version "3.2.11"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
+  integrity sha1-oRcq2VzrihbiDKpcXlZIDlEpwdk=
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -3550,9 +3558,16 @@ mute-stream@0.0.8:
   integrity sha1-FjDEKyJR/4HiooPelqVJfqkuXg0=
 
 nanoid@^3.1.23:
-  version "3.1.32"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/nanoid/-/nanoid-3.1.32.tgz#8f96069e6239cc0a9ae8c0d3b41a3b4933a88c0a"
-  integrity sha1-j5YGnmI5zAqa6MDTtBo7STOojAo=
+  version "3.2.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/nanoid/-/nanoid-3.2.0.tgz#62667522da6673971cca916a6d3eff3f415ff80c"
+  integrity sha1-YmZ1Itpmc5ccypFqbT7/P0Ff+Aw=
+
+next-urql@^3.3.2:
+  version "3.3.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/next-urql/-/next-urql-3.3.2.tgz#8be8e37f48726c55cb1c3eecb8c2003bdc319f2e"
+  integrity sha1-i+jjf0hybFXLHD7suMIAO9wxny4=
+  dependencies:
+    react-ssr-prepass "^1.4.0"
 
 next@latest:
   version "12.0.8"
@@ -3602,9 +3617,9 @@ node-fetch@2.6.1:
   integrity sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=
 
 node-fetch@^2.6.1, node-fetch@^2.6.5:
-  version "2.6.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/node-fetch/-/node-fetch-2.6.6.tgz#1751a7c01834e8e1697758732e9efb6eeadfaf89"
-  integrity sha1-F1GnwBg06OFpd1hzLp77burfr4k=
+  version "2.6.7"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha1-JN6fuoJ+O0rkTciyAlajeRYAUq0=
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -3978,6 +3993,11 @@ react-remove-scroll@2.4.1:
     tslib "^1.0.0"
     use-callback-ref "^1.2.3"
     use-sidecar "^1.0.1"
+
+react-ssr-prepass@^1.4.0:
+  version "1.5.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/react-ssr-prepass/-/react-ssr-prepass-1.5.0.tgz#bc4ca7fcb52365e6aea11cc254a3d1bdcbd030c5"
+  integrity sha1-vEyn/LUjZeauoRzCVKPRvcvQMMU=
 
 react-style-singleton@^2.1.0:
   version "2.1.1"
@@ -4561,9 +4581,9 @@ unc-path-regex@^0.1.2:
   integrity sha1-5z3T17DXxe2G+6xrCufYxqadUPo=
 
 undici@^4.9.3:
-  version "4.12.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/undici/-/undici-4.12.1.tgz#3a7b5fb12f835a96a65397dd94578464b08d1c27"
-  integrity sha1-OntfsS+DWpamU5fdlFeEZLCNHCc=
+  version "4.12.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/undici/-/undici-4.12.2.tgz#f2fc50ca77a774ed8c0e7067c9361ee18a2f422b"
+  integrity sha1-8vxQynendO2MDnBnyTYe4YovQis=
 
 unixify@^1.0.0:
   version "1.0.0"
@@ -4725,9 +4745,9 @@ wrappy@1:
   integrity sha1-5Z/FCfsV3ftlSH7pdlxaUd7F/ns=
 
 ws@^8.3.0:
-  version "8.4.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ws/-/ws-8.4.0.tgz#f05e982a0a88c604080e8581576e2a063802bed6"
-  integrity sha1-8F6YKgqIxgQIDoWBV24qBjgCvtY=
+  version "8.4.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ws/-/ws-8.4.2.tgz#18e749868d8439f2268368829042894b6907aa0b"
+  integrity sha1-GOdJho2EOfImg2iCkEKJS2kHqgs=
 
 y18n@^4.0.0:
   version "4.0.3"
