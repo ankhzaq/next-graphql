@@ -493,6 +493,13 @@
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/node/-/node-14.18.5.tgz#0dd636fe7b2c6055cbed0d4ca3b7fb540f130a96"
   integrity sha1-DdY2/nssYFXL7Q1Mo7f7VA8TCpY=
 
+"@types/nodemailer@^6.4.4":
+  version "6.4.4"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/nodemailer/-/nodemailer-6.4.4.tgz#c265f7e7a51df587597b3a49a023acaf0c741f4b"
+  integrity sha1-wmX356Ud9YdZezpJoCOsrwx0H0s=
+  dependencies:
+    "@types/node" "*"
+
 "@types/qs@*":
   version "6.9.7"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/qs/-/qs-6.9.7.tgz"
@@ -2912,6 +2919,11 @@ node-fetch@^2.6.1, node-fetch@^2.6.5:
   integrity sha1-F1GnwBg06OFpd1hzLp77burfr4k=
   dependencies:
     whatwg-url "^5.0.0"
+
+nodemailer@^6.7.2:
+  version "6.7.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/nodemailer/-/nodemailer-6.7.2.tgz#44b2ad5f7ed71b7067f7a21c4fedabaec62b85e0"
+  integrity sha1-RLKtX37XG3Bn96IcT+2rrsYrheA=
 
 nodemon@^2.0.15:
   version "2.0.15"

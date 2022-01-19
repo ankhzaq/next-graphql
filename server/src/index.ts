@@ -12,10 +12,13 @@ import microConfig from "./mikro-orm.config";
 import cors from 'cors';
 
 import { __prod__, cookieOptions } from './constants';
+import { User } from './entities/User';
 
 const main = async () => {
 
   const orm = await MikroORM.init(microConfig);
+  // clean user table
+  // await orm.em.nativeDelete(User, { })
   await orm.getMigrator().up();
 
   const app = express();
