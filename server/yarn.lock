@@ -4041,7 +4041,7 @@ typedarray-to-buffer@^3.1.5:
 
 typeorm@^0.2.41:
   version "0.2.41"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/typeorm/-/typeorm-0.2.41.tgz"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/typeorm/-/typeorm-0.2.41.tgz#88758101ac158dc0a0a903d70eaacea2974281cc"
   integrity sha1-iHWBAawVjcCgqQPXDqrOopdCgcw=
   dependencies:
     "@sqltools/formatter" "^1.2.2"
