@@ -78,93 +78,6 @@
     semver "^7.3.5"
     tar "^6.1.11"
 
-"@mikro-orm/cli@^4.5.10":
-  version "4.5.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@mikro-orm/cli/-/cli-4.5.10.tgz"
-  integrity sha1-DTDKjKgHlOeDYQgKvbivsaVIIX0=
-  dependencies:
-    "@mikro-orm/core" "^4.5.10"
-    "@mikro-orm/entity-generator" "^4.5.10"
-    "@mikro-orm/knex" "^4.5.10"
-    "@mikro-orm/migrations" "^4.5.10"
-    ansi-colors "4.1.1"
-    cli-table3 "0.6.0"
-    fs-extra "9.1.0"
-    tsconfig-paths "3.9.0"
-    yargonaut "1.1.4"
-    yargs "15.4.1"
-
-"@mikro-orm/core@^4.5.10":
-  version "4.5.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@mikro-orm/core/-/core-4.5.10.tgz"
-  integrity sha1-GVIiZUvR4lZIv/0oLRPxwq15grM=
-  dependencies:
-    ansi-colors "4.1.1"
-    clone "2.1.2"
-    dotenv "8.2.0"
-    escaya "0.0.61"
-    fs-extra "9.1.0"
-    globby "11.0.3"
-    reflect-metadata "0.1.13"
-    strip-json-comments "3.1.1"
-
-"@mikro-orm/entity-generator@^4.5.10":
-  version "4.5.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@mikro-orm/entity-generator/-/entity-generator-4.5.10.tgz"
-  integrity sha1-l63+6dFHS2ST1GDhKHi2qpfg9X4=
-  dependencies:
-    "@mikro-orm/knex" "^4.5.10"
-    fs-extra "9.1.0"
-
-"@mikro-orm/knex@^4.5.10":
-  version "4.5.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@mikro-orm/knex/-/knex-4.5.10.tgz"
-  integrity sha1-F3Gg+f7htuMNw0k2r1wQscGl4EE=
-  dependencies:
-    fs-extra "9.1.0"
-    knex "0.21.19"
-    sqlstring "2.3.2"
-
-"@mikro-orm/migrations@^4.5.10":
-  version "4.5.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@mikro-orm/migrations/-/migrations-4.5.10.tgz"
-  integrity sha1-TyqiA/m2lIOobU+aO56lUkjsXUo=
-  dependencies:
-    "@mikro-orm/knex" "^4.5.10"
-    "@types/umzug" "2.3.0"
-    fs-extra "9.1.0"
-    knex "0.21.19"
-    umzug "2.3.0"
-
-"@mikro-orm/postgresql@^4.5.10":
-  version "4.5.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@mikro-orm/postgresql/-/postgresql-4.5.10.tgz"
-  integrity sha1-iYR+Ob9bKxj+H1fnWxnvy1f0ffM=
-  dependencies:
-    "@mikro-orm/knex" "^4.5.10"
-    pg "8.6.0"
-
-"@nodelib/fs.scandir@2.1.5":
-  version "2.1.5"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
-  integrity sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=
-  dependencies:
-    "@nodelib/fs.stat" "2.0.5"
-    run-parallel "^1.1.9"
-
-"@nodelib/fs.stat@2.0.5", "@nodelib/fs.stat@^2.0.2":
-  version "2.0.5"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz"
-  integrity sha1-W9Jir5Tp0lvR5xsF3u1Eh2oiLos=
-
-"@nodelib/fs.walk@^1.2.3":
-  version "1.2.8"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz"
-  integrity sha1-6Vc36LtnRt3t9pxVaVNJTxlv5po=
-  dependencies:
-    "@nodelib/fs.scandir" "2.1.5"
-    fastq "^1.6.0"
-
 "@phc/format@^1.0.0":
   version "1.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@phc/format/-/format-1.0.0.tgz"
@@ -267,11 +180,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/bluebird@*":
-  version "3.5.36"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/bluebird/-/bluebird-3.5.36.tgz"
-  integrity sha1-ANkwHU3DXC9kZaiuxjS7UzZ0xlI=
-
 "@types/body-parser@*":
   version "1.19.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/body-parser/-/body-parser-1.19.2.tgz"
@@ -309,13 +217,6 @@
   version "0.5.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/content-disposition/-/content-disposition-0.5.4.tgz"
   integrity sha1-3kjPAcecnxVgvP2K5DIXqwKGV/g=
-
-"@types/continuation-local-storage@*":
-  version "3.2.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/continuation-local-storage/-/continuation-local-storage-3.2.4.tgz"
-  integrity sha1-ZVyP/ZMnqmD7iudzpfLvvJc6fLs=
-  dependencies:
-    "@types/node" "*"
 
 "@types/cookies@*":
   version "0.7.7"
@@ -395,11 +296,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/json5@^0.0.29":
-  version "0.0.29"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/json5/-/json5-0.0.29.tgz"
-  integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
-
 "@types/keygrip@*":
   version "1.0.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/keygrip/-/keygrip-1.0.2.tgz"
@@ -426,11 +322,6 @@
     "@types/koa-compose" "*"
     "@types/node" "*"
 
-"@types/lodash@*":
-  version "4.14.178"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/lodash/-/lodash-4.14.178.tgz"
-  integrity sha1-NB9tIkfbUo1KE927N0vNyAQG9Pg=
-
 "@types/long@^4.0.0":
   version "4.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/long/-/long-4.0.1.tgz"
@@ -445,13 +336,6 @@
   version "3.0.5"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/minimatch/-/minimatch-3.0.5.tgz"
   integrity sha1-EAHMXmo3BLg8I2An538vWOoBD0A=
-
-"@types/mongodb@*":
-  version "4.0.7"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/mongodb/-/mongodb-4.0.7.tgz"
-  integrity sha1-66qAxTtoTqUsz+dyHA9cnve09RE=
-  dependencies:
-    mongodb "*"
 
 "@types/node@*", "@types/node@^17.0.6":
   version "17.0.8"
@@ -497,16 +381,6 @@
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/semver/-/semver-7.3.9.tgz"
   integrity sha1-FSxsIKdojDC5Z+wYQdMazlaYY/w=
 
-"@types/sequelize@*":
-  version "4.28.11"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/sequelize/-/sequelize-4.28.11.tgz"
-  integrity sha1-iwxTC6xObXOgQWqU2w3oIMxNR8M=
-  dependencies:
-    "@types/bluebird" "*"
-    "@types/continuation-local-storage" "*"
-    "@types/lodash" "*"
-    "@types/validator" "*"
-
 "@types/serve-static@*":
   version "1.13.10"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/serve-static/-/serve-static-1.13.10.tgz"
@@ -515,23 +389,10 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
-"@types/umzug@2.3.0":
-  version "2.3.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/umzug/-/umzug-2.3.0.tgz"
-  integrity sha1-dO3hjPg37Y2qJXwrz1pU41HCpVE=
-  dependencies:
-    "@types/mongodb" "*"
-    "@types/sequelize" "*"
-
 "@types/uuid@^8.3.4":
   version "8.3.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
   integrity sha1-vYakNhffBZR4fTi3NfVcgFvs8bw=
-
-"@types/validator@*":
-  version "13.7.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@types/validator/-/validator-13.7.1.tgz"
-  integrity sha1-zasbR3n2sXGKCN6J2S0mA7cZUMs=
 
 "@types/ws@^7.0.0":
   version "7.4.7"
@@ -589,25 +450,10 @@ ansi-align@^3.0.0:
   dependencies:
     string-width "^4.1.0"
 
-ansi-colors@4.1.1:
-  version "4.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ansi-colors/-/ansi-colors-4.1.1.tgz"
-  integrity sha1-y7muJWv3UK8eqzRPIpqif+lLo0g=
-
-ansi-regex@^2.0.0:
-  version "2.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ansi-regex/-/ansi-regex-2.1.1.tgz"
-  integrity sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
-
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ansi-regex/-/ansi-regex-5.0.1.tgz"
   integrity sha1-CCyyyJyf6GWaMRpTvWpNxTAdswQ=
-
-ansi-styles@^2.2.1:
-  version "2.2.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ansi-styles/-/ansi-styles-2.2.1.tgz"
-  integrity sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=
 
 ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   version "4.3.0"
@@ -817,50 +663,10 @@ argparse@^2.0.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/argparse/-/argparse-2.0.1.tgz"
   integrity sha1-JG9Q88p4oyQPbJl+ipvR6sSeSzg=
 
-arr-diff@^4.0.0:
-  version "4.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/arr-diff/-/arr-diff-4.0.0.tgz"
-  integrity sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA=
-
-arr-flatten@^1.1.0:
-  version "1.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/arr-flatten/-/arr-flatten-1.1.0.tgz"
-  integrity sha1-NgSLv/TntH4TZkQxbJlmnqWukfE=
-
-arr-union@^3.1.0:
-  version "3.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/arr-union/-/arr-union-3.1.0.tgz"
-  integrity sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
-
-array-each@^1.0.1:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/array-each/-/array-each-1.0.1.tgz"
-  integrity sha1-p5SvDAWrF1KEbudTofIRoFugxE8=
-
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/array-flatten/-/array-flatten-1.1.1.tgz"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
-
-array-slice@^1.0.0:
-  version "1.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/array-slice/-/array-slice-1.1.0.tgz"
-  integrity sha1-42jqFfibxwaff/uJrsOmx9SsItQ=
-
-array-union@^2.1.0:
-  version "2.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/array-union/-/array-union-2.1.0.tgz"
-  integrity sha1-t5hCCtvrHego2ErNii4j0+/oXo0=
-
-array-unique@^0.3.2:
-  version "0.3.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/array-unique/-/array-unique-0.3.2.tgz"
-  integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
-
-assign-symbols@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/assign-symbols/-/assign-symbols-1.0.0.tgz"
-  integrity sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=
 
 async-retry@^1.2.1:
   version "1.3.3"
@@ -868,16 +674,6 @@ async-retry@^1.2.1:
   integrity sha1-Dn82wE2EeOeli9vtgM7fl3eF8oA=
   dependencies:
     retry "0.13.1"
-
-at-least-node@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/at-least-node/-/at-least-node-1.0.0.tgz"
-  integrity sha1-YCzUtG6EStTv/JKoARo8RuAjjcI=
-
-atob@^2.1.2:
-  version "2.1.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/atob/-/atob-2.1.2.tgz"
-  integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
 backo2@^1.0.2:
   version "1.0.2"
@@ -894,36 +690,10 @@ base64-js@^1.3.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/base64-js/-/base64-js-1.5.1.tgz"
   integrity sha1-GxtEAWClv3rUC2UPCVljSBkDkwo=
 
-base@^0.11.1:
-  version "0.11.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/base/-/base-0.11.2.tgz"
-  integrity sha1-e95c7RRbbVUakNuH+DxVi060io8=
-  dependencies:
-    cache-base "^1.0.1"
-    class-utils "^0.3.5"
-    component-emitter "^1.2.1"
-    define-property "^1.0.0"
-    isobject "^3.0.1"
-    mixin-deep "^1.2.0"
-    pascalcase "^0.1.1"
-
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/binary-extensions/-/binary-extensions-2.2.0.tgz"
   integrity sha1-dfUC7q+f/eQvyYgpZFvk6na9ni0=
-
-bl@^2.2.1:
-  version "2.2.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/bl/-/bl-2.2.1.tgz"
-  integrity sha1-jBGntzBlXF1WiYzchxIk9A/ZAdU=
-  dependencies:
-    readable-stream "^2.3.5"
-    safe-buffer "^5.1.1"
-
-bluebird@^3.7.2:
-  version "3.7.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/bluebird/-/bluebird-3.7.2.tgz"
-  integrity sha1-nyKcFb4nJFT/qXOs4NvueaGww28=
 
 body-parser@1.19.1, body-parser@^1.18.3:
   version "1.19.1"
@@ -963,33 +733,12 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-braces@^2.3.1:
-  version "2.3.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/braces/-/braces-2.3.2.tgz"
-  integrity sha1-WXn9PxTNUxVl5fot8av/8d+u5yk=
-  dependencies:
-    arr-flatten "^1.1.0"
-    array-unique "^0.3.2"
-    extend-shallow "^2.0.1"
-    fill-range "^4.0.0"
-    isobject "^3.0.1"
-    repeat-element "^1.1.2"
-    snapdragon "^0.8.1"
-    snapdragon-node "^2.0.1"
-    split-string "^3.0.2"
-    to-regex "^3.0.1"
-
-braces@^3.0.1, braces@~3.0.2:
+braces@~3.0.2:
   version "3.0.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/braces/-/braces-3.0.2.tgz"
   integrity sha1-NFThpGLujVmeI23zNs2epPiv4Qc=
   dependencies:
     fill-range "^7.0.1"
-
-bson@^1.1.4:
-  version "1.1.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/bson/-/bson-1.1.6.tgz"
-  integrity sha1-+4Gb6aYM1nfghTruTKcSp4XWYYo=
 
 buffer-writer@2.0.0:
   version "2.0.0"
@@ -1016,21 +765,6 @@ bytes@3.1.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/bytes/-/bytes-3.1.1.tgz"
   integrity sha1-PwGCkctMutmsy25pcLypyIieh5o=
 
-cache-base@^1.0.1:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cache-base/-/cache-base-1.0.1.tgz"
-  integrity sha1-Cn9GQWgxyLZi7jb+TnxZ129marI=
-  dependencies:
-    collection-visit "^1.0.0"
-    component-emitter "^1.2.1"
-    get-value "^2.0.6"
-    has-value "^1.0.0"
-    isobject "^3.0.1"
-    set-value "^2.0.0"
-    to-object-path "^0.3.0"
-    union-value "^1.0.0"
-    unset-value "^1.0.0"
-
 cacheable-request@^6.0.0:
   version "6.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cacheable-request/-/cacheable-request-6.1.0.tgz"
@@ -1052,26 +786,10 @@ call-bind@^1.0.0, call-bind@^1.0.2:
     function-bind "^1.1.1"
     get-intrinsic "^1.0.2"
 
-camelcase@^5.0.0:
-  version "5.3.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/camelcase/-/camelcase-5.3.1.tgz"
-  integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
-
 camelcase@^6.2.0:
   version "6.3.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/camelcase/-/camelcase-6.3.0.tgz"
   integrity sha1-VoW5XrIJrJwMF3Rnd4ychN9Yupo=
-
-chalk@^1.1.1:
-  version "1.1.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/chalk/-/chalk-1.1.3.tgz"
-  integrity sha1-qBFcVeSnAv5NFQq9OHKCKn4J/Jg=
-  dependencies:
-    ansi-styles "^2.2.1"
-    escape-string-regexp "^1.0.2"
-    has-ansi "^2.0.0"
-    strip-ansi "^3.0.0"
-    supports-color "^2.0.0"
 
 chalk@^4.0.0, chalk@^4.1.0:
   version "4.1.2"
@@ -1106,16 +824,6 @@ ci-info@^2.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ci-info/-/ci-info-2.0.0.tgz"
   integrity sha1-Z6npZL4xpR4V5QENWObxKDQAL0Y=
 
-class-utils@^0.3.5:
-  version "0.3.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/class-utils/-/class-utils-0.3.6.tgz"
-  integrity sha1-+TNprouafOAv1B+q0MqDAzGQxGM=
-  dependencies:
-    arr-union "^3.1.0"
-    define-property "^0.2.5"
-    isobject "^3.0.0"
-    static-extend "^0.1.1"
-
 cli-boxes@^2.2.1:
   version "2.2.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cli-boxes/-/cli-boxes-2.2.1.tgz"
@@ -1133,25 +841,6 @@ cli-highlight@^2.1.11:
     parse5-htmlparser2-tree-adapter "^6.0.0"
     yargs "^16.0.0"
 
-cli-table3@0.6.0:
-  version "0.6.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cli-table3/-/cli-table3-0.6.0.tgz"
-  integrity sha1-t7G8ZcqOe1zvkSThPcKyHizk+u4=
-  dependencies:
-    object-assign "^4.1.0"
-    string-width "^4.2.0"
-  optionalDependencies:
-    colors "^1.1.2"
-
-cliui@^6.0.0:
-  version "6.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cliui/-/cliui-6.0.0.tgz"
-  integrity sha1-UR1wLAxOQcoVbX0OlgIfI+EyJbE=
-  dependencies:
-    string-width "^4.2.0"
-    strip-ansi "^6.0.0"
-    wrap-ansi "^6.2.0"
-
 cliui@^7.0.2:
   version "7.0.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cliui/-/cliui-7.0.4.tgz"
@@ -1168,23 +857,10 @@ clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
-clone@2.1.2:
-  version "2.1.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/clone/-/clone-2.1.2.tgz"
-  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
-
 cluster-key-slot@^1.1.0:
   version "1.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cluster-key-slot/-/cluster-key-slot-1.1.0.tgz"
   integrity sha1-MEdLKpgfsSFyaVgzBSvA0BM20Q0=
-
-collection-visit@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/collection-visit/-/collection-visit-1.0.0.tgz"
-  integrity sha1-S8A3PBZLwykbTTaMgpzxqApZ3KA=
-  dependencies:
-    map-visit "^1.0.0"
-    object-visit "^1.0.0"
 
 color-convert@^2.0.1:
   version "2.0.1"
@@ -1203,30 +879,10 @@ color-support@^1.1.2:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/color-support/-/color-support-1.1.3.tgz"
   integrity sha1-k4NDeaHMmgxh+C9S8NBDIiUb1aI=
 
-colorette@1.2.1:
-  version "1.2.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/colorette/-/colorette-1.2.1.tgz"
-  integrity sha1-TQuSEyXBT6+SYzCGpTbbbolWSxs=
-
-colors@^1.1.2:
-  version "1.4.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/colors/-/colors-1.4.0.tgz"
-  integrity sha1-xQSRR51MG9rtLJztMs98fcI2D3g=
-
 commander@^2.20.3:
   version "2.20.3"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/commander/-/commander-2.20.3.tgz"
   integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
-
-commander@^6.2.0:
-  version "6.2.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/commander/-/commander-6.2.1.tgz"
-  integrity sha1-B5LraC37wyWZm7K4T93duhEKxzw=
-
-component-emitter@^1.2.1:
-  version "1.3.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/component-emitter/-/component-emitter-1.3.0.tgz"
-  integrity sha1-FuQHD7qK4ptnnyIVhT7hgasuq8A=
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1277,20 +933,10 @@ cookie@0.4.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cookie/-/cookie-0.4.1.tgz"
   integrity sha1-r9cT/ibr0hupXOth+agRblClN9E=
 
-copy-descriptor@^0.1.0:
-  version "0.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/copy-descriptor/-/copy-descriptor-0.1.1.tgz"
-  integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-
 core-js-pure@^3.10.2:
   version "3.20.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/core-js-pure/-/core-js-pure-3.20.2.tgz"
   integrity sha1-XSY1ZfDjTO7szcRCL64+hMprjA8=
-
-core-util-is@~1.0.0:
-  version "1.0.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/core-util-is/-/core-util-is-1.0.3.tgz"
-  integrity sha1-pgQtNjTCsn6TKPg3uWX6yDgI24U=
 
 cors@^2.8.5:
   version "2.8.5"
@@ -1315,7 +961,7 @@ cssfilter@0.0.10:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cssfilter/-/cssfilter-0.0.10.tgz"
   integrity sha1-xtJnJjKi5cg+AT5oZKQs6N79IK4=
 
-debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
+debug@2.6.9:
   version "2.6.9"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/debug/-/debug-2.6.9.tgz"
   integrity sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=
@@ -1329,29 +975,12 @@ debug@4, debug@^4.3.1:
   dependencies:
     ms "2.1.2"
 
-debug@4.3.1:
-  version "4.3.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/debug/-/debug-4.3.1.tgz"
-  integrity sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
-  dependencies:
-    ms "2.1.2"
-
 debug@^3.2.7:
   version "3.2.7"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/debug/-/debug-3.2.7.tgz"
   integrity sha1-clgLfpFF+zm2Z2+cXl+xALk0F5o=
   dependencies:
     ms "^2.1.1"
-
-decamelize@^1.2.0:
-  version "1.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/decamelize/-/decamelize-1.2.0.tgz"
-  integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
-
-decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/decode-uri-component/-/decode-uri-component-0.2.0.tgz"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
 decompress-response@^3.3.0:
   version "3.3.0"
@@ -1377,34 +1006,12 @@ define-properties@^1.1.3:
   dependencies:
     object-keys "^1.0.12"
 
-define-property@^0.2.5:
-  version "0.2.5"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/define-property/-/define-property-0.2.5.tgz"
-  integrity sha1-w1se+RjsPJkPmlvFe+BKrOxcgRY=
-  dependencies:
-    is-descriptor "^0.1.0"
-
-define-property@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/define-property/-/define-property-1.0.0.tgz"
-  integrity sha1-dp66rz9KY6rTr56NMEybvnm/sOY=
-  dependencies:
-    is-descriptor "^1.0.0"
-
-define-property@^2.0.2:
-  version "2.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/define-property/-/define-property-2.0.2.tgz"
-  integrity sha1-1Flono1lS6d+AqgX+HENcCyxbp0=
-  dependencies:
-    is-descriptor "^1.0.2"
-    isobject "^3.0.1"
-
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/delegates/-/delegates-1.0.0.tgz"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
-denque@^1.1.0, denque@^1.4.1:
+denque@^1.1.0:
   version "1.5.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/denque/-/denque-1.5.1.tgz"
   integrity sha1-B/Zw4pyaePj67LJWah4sEZKcXL8=
@@ -1429,11 +1036,6 @@ destroy@~1.0.4:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/destroy/-/destroy-1.0.4.tgz"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
-detect-file@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/detect-file/-/detect-file-1.0.0.tgz"
-  integrity sha1-8NZtA2cqglyxtzvbP+YjEMjlUrc=
-
 detect-libc@^1.0.3:
   version "1.0.3"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/detect-libc/-/detect-libc-1.0.3.tgz"
@@ -1451,13 +1053,6 @@ diff@^4.0.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/diff/-/diff-4.0.2.tgz"
   integrity sha1-YPOuy4nV+uUgwRqhnvwruYKq3n0=
 
-dir-glob@^3.0.1:
-  version "3.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/dir-glob/-/dir-glob-3.0.1.tgz"
-  integrity sha1-Vtv3PZkqSpO6FYT0U0Bj/S5BcX8=
-  dependencies:
-    path-type "^4.0.0"
-
 dot-prop@^5.2.0:
   version "5.3.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/dot-prop/-/dot-prop-5.3.0.tgz"
@@ -1465,7 +1060,7 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@8.2.0, dotenv@^8.2.0:
+dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/dotenv/-/dotenv-8.2.0.tgz"
   integrity sha1-l+YZJZradQ7qPk6j4mvO6lQksWo=
@@ -1547,21 +1142,6 @@ escape-html@~1.0.3:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/escape-html/-/escape-html-1.0.3.tgz"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
 
-escape-string-regexp@^1.0.2:
-  version "1.0.5"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
-  integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-
-escaya@0.0.61:
-  version "0.0.61"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/escaya/-/escaya-0.0.61.tgz"
-  integrity sha1-+HqJ3UPYd8hrBrVbeLekZc0sXDo=
-
-esm@^3.2.25:
-  version "3.2.25"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/esm/-/esm-3.2.25.tgz"
-  integrity sha1-NCwYwp1WFXaIulzjH4Qx+7eVzBA=
-
 etag@~1.8.1:
   version "1.8.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/etag/-/etag-1.8.1.tgz"
@@ -1571,26 +1151,6 @@ eventemitter3@^3.1.0:
   version "3.1.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/eventemitter3/-/eventemitter3-3.1.2.tgz"
   integrity sha1-LT1I+cNGaY/Og6hdfWZOmFNd9uc=
-
-expand-brackets@^2.1.4:
-  version "2.1.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expand-brackets/-/expand-brackets-2.1.4.tgz"
-  integrity sha1-t3c14xXOMPa27/D4OwQVGiJEliI=
-  dependencies:
-    debug "^2.3.3"
-    define-property "^0.2.5"
-    extend-shallow "^2.0.1"
-    posix-character-classes "^0.1.0"
-    regex-not "^1.0.0"
-    snapdragon "^0.8.1"
-    to-regex "^3.0.1"
-
-expand-tilde@^2.0.0, expand-tilde@^2.0.2:
-  version "2.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expand-tilde/-/expand-tilde-2.0.2.tgz"
-  integrity sha1-l+gBqgUt8CRU3kawK/YhZCzchQI=
-  dependencies:
-    homedir-polyfill "^1.0.1"
 
 express-session@^1.17.2:
   version "1.17.2"
@@ -1642,77 +1202,10 @@ express@^4.17.1, express@^4.17.2:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
-extend-shallow@^2.0.1:
-  version "2.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/extend-shallow/-/extend-shallow-2.0.1.tgz"
-  integrity sha1-Ua99YUrZqfYQ6huvu5idaxxWiQ8=
-  dependencies:
-    is-extendable "^0.1.0"
-
-extend-shallow@^3.0.0, extend-shallow@^3.0.2:
-  version "3.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/extend-shallow/-/extend-shallow-3.0.2.tgz"
-  integrity sha1-Jqcarwc7OfshJxcnRhMcJwQCjbg=
-  dependencies:
-    assign-symbols "^1.0.0"
-    is-extendable "^1.0.1"
-
-extend@^3.0.0:
-  version "3.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/extend/-/extend-3.0.2.tgz"
-  integrity sha1-+LETa0Bx+9jrFAr/hYsQGewpFfo=
-
-extglob@^2.0.4:
-  version "2.0.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/extglob/-/extglob-2.0.4.tgz"
-  integrity sha1-rQD+TcYSqSMuhxhxHcXLWrAoVUM=
-  dependencies:
-    array-unique "^0.3.2"
-    define-property "^1.0.0"
-    expand-brackets "^2.1.4"
-    extend-shallow "^2.0.1"
-    fragment-cache "^0.2.1"
-    regex-not "^1.0.0"
-    snapdragon "^0.8.1"
-    to-regex "^3.0.1"
-
-fast-glob@^3.1.1:
-  version "3.2.7"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fast-glob/-/fast-glob-3.2.7.tgz"
-  integrity sha1-/Wy3otfpqnp4RhEehaGW1rL3ZqE=
-  dependencies:
-    "@nodelib/fs.stat" "^2.0.2"
-    "@nodelib/fs.walk" "^1.2.3"
-    glob-parent "^5.1.2"
-    merge2 "^1.3.0"
-    micromatch "^4.0.4"
-
 fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz"
   integrity sha1-h0v2nG9ATCtdmcSBNBOZ/VWJJjM=
-
-fastq@^1.6.0:
-  version "1.13.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fastq/-/fastq-1.13.0.tgz"
-  integrity sha1-YWdg+Ip1Jr38WWt8q4wYk4w2uYw=
-  dependencies:
-    reusify "^1.0.4"
-
-figlet@^1.1.1:
-  version "1.5.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/figlet/-/figlet-1.5.2.tgz"
-  integrity sha1-3aNP8jPJpI42/P9nQa61uv5JtjQ=
-
-fill-range@^4.0.0:
-  version "4.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fill-range/-/fill-range-4.0.0.tgz"
-  integrity sha1-1USBHUKPmOsGpj3EAtJAPDKMOPc=
-  dependencies:
-    extend-shallow "^2.0.1"
-    is-number "^3.0.0"
-    repeat-string "^1.6.1"
-    to-regex-range "^2.1.0"
 
 fill-range@^7.0.1:
   version "7.0.1"
@@ -1734,40 +1227,6 @@ finalhandler@~1.1.2:
     statuses "~1.5.0"
     unpipe "~1.0.0"
 
-find-up@^4.1.0:
-  version "4.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/find-up/-/find-up-4.1.0.tgz"
-  integrity sha1-l6/n1s3AvFkoWEt8jXsW6KmqXRk=
-  dependencies:
-    locate-path "^5.0.0"
-    path-exists "^4.0.0"
-
-findup-sync@^3.0.0:
-  version "3.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/findup-sync/-/findup-sync-3.0.0.tgz"
-  integrity sha1-F7EI+e5RLft6XH88iyfqnhqcCNE=
-  dependencies:
-    detect-file "^1.0.0"
-    is-glob "^4.0.0"
-    micromatch "^3.0.4"
-    resolve-dir "^1.0.1"
-
-fined@^1.0.1:
-  version "1.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fined/-/fined-1.2.0.tgz"
-  integrity sha1-0AvszxqitHXRbUI7Aji3E6LEo3s=
-  dependencies:
-    expand-tilde "^2.0.2"
-    is-plain-object "^2.0.3"
-    object.defaults "^1.1.0"
-    object.pick "^1.2.0"
-    parse-filepath "^1.0.1"
-
-flagged-respawn@^1.0.0:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/flagged-respawn/-/flagged-respawn-1.0.1.tgz"
-  integrity sha1-595vEnnd2cqarIpZcdYYYGs6q0E=
-
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/for-each/-/for-each-0.3.3.tgz"
@@ -1775,29 +1234,10 @@ for-each@^0.3.3:
   dependencies:
     is-callable "^1.1.3"
 
-for-in@^1.0.1, for-in@^1.0.2:
-  version "1.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/for-in/-/for-in-1.0.2.tgz"
-  integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
-
-for-own@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/for-own/-/for-own-1.0.0.tgz"
-  integrity sha1-xjMy9BXO3EsE2/5wz4NklMU8tEs=
-  dependencies:
-    for-in "^1.0.1"
-
 forwarded@0.2.0:
   version "0.2.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/forwarded/-/forwarded-0.2.0.tgz"
   integrity sha1-ImmTZCiq1MFcfr6XeahL8LKoGBE=
-
-fragment-cache@^0.2.1:
-  version "0.2.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fragment-cache/-/fragment-cache-0.2.1.tgz"
-  integrity sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk=
-  dependencies:
-    map-cache "^0.2.2"
 
 fresh@0.5.2:
   version "0.5.2"
@@ -1808,16 +1248,6 @@ fs-capacitor@^2.0.4:
   version "2.0.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fs-capacitor/-/fs-capacitor-2.0.4.tgz"
   integrity sha1-WiLnLUCuUHi0/mT+TQjA0/yIrTw=
-
-fs-extra@9.1.0:
-  version "9.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/fs-extra/-/fs-extra-9.1.0.tgz"
-  integrity sha1-WVRGDHZKjaIJS6NVS/g55rmnyG0=
-  dependencies:
-    at-least-node "^1.0.0"
-    graceful-fs "^4.2.0"
-    jsonfile "^6.0.1"
-    universalify "^2.0.0"
 
 fs-minipass@^2.0.0:
   version "2.1.0"
@@ -1856,7 +1286,7 @@ gauge@^3.0.0:
     strip-ansi "^6.0.1"
     wide-align "^1.1.2"
 
-get-caller-file@^2.0.1, get-caller-file@^2.0.5:
+get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/get-caller-file/-/get-caller-file-2.0.5.tgz"
   integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
@@ -1892,17 +1322,7 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-get-value@^2.0.3, get-value@^2.0.6:
-  version "2.0.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/get-value/-/get-value-2.0.6.tgz"
-  integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
-
-getopts@2.2.5:
-  version "2.2.5"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/getopts/-/getopts-2.2.5.tgz"
-  integrity sha1-Z6D+RxysucaH2BfKtkULlt3oMTs=
-
-glob-parent@^5.1.2, glob-parent@~5.1.2:
+glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/glob-parent/-/glob-parent-5.1.2.tgz"
   integrity sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ=
@@ -1928,38 +1348,6 @@ global-dirs@^3.0.0:
   dependencies:
     ini "2.0.0"
 
-global-modules@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/global-modules/-/global-modules-1.0.0.tgz"
-  integrity sha1-bXcPDrUjrHgWTXK15xqIdyZcw+o=
-  dependencies:
-    global-prefix "^1.0.1"
-    is-windows "^1.0.1"
-    resolve-dir "^1.0.0"
-
-global-prefix@^1.0.1:
-  version "1.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/global-prefix/-/global-prefix-1.0.2.tgz"
-  integrity sha1-2/dDxsFJklk8ZVVoy2btMsASLr4=
-  dependencies:
-    expand-tilde "^2.0.2"
-    homedir-polyfill "^1.0.1"
-    ini "^1.3.4"
-    is-windows "^1.0.1"
-    which "^1.2.14"
-
-globby@11.0.3:
-  version "11.0.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/globby/-/globby-11.0.3.tgz"
-  integrity sha1-mx8MtSPhcd0a2MeyqftLZEuVk8s=
-  dependencies:
-    array-union "^2.1.0"
-    dir-glob "^3.0.1"
-    fast-glob "^3.1.1"
-    ignore "^5.1.4"
-    merge2 "^1.3.0"
-    slash "^3.0.0"
-
 got@^9.6.0:
   version "9.6.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/got/-/got-9.6.0.tgz"
@@ -1977,7 +1365,7 @@ got@^9.6.0:
     to-readable-stream "^1.0.0"
     url-parse-lax "^3.0.0"
 
-graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0:
+graceful-fs@^4.1.2:
   version "4.2.9"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/graceful-fs/-/graceful-fs-4.2.9.tgz"
   integrity sha1-BBsF30V1Xlh6JJQiebnRExRuHJY=
@@ -2028,13 +1416,6 @@ graphql@^15.3.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/graphql/-/graphql-15.8.0.tgz"
   integrity sha1-M0EOlrAS+jvbEJHMmalHadshKzg=
 
-has-ansi@^2.0.0:
-  version "2.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-ansi/-/has-ansi-2.0.0.tgz"
-  integrity sha1-NPUEnOHs3ysGSa8+8k5F7TVBbZE=
-  dependencies:
-    ansi-regex "^2.0.0"
-
 has-bigints@^1.0.1:
   version "1.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-bigints/-/has-bigints-1.0.1.tgz"
@@ -2067,37 +1448,6 @@ has-unicode@^2.0.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-unicode/-/has-unicode-2.0.1.tgz"
   integrity sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=
 
-has-value@^0.3.1:
-  version "0.3.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-value/-/has-value-0.3.1.tgz"
-  integrity sha1-ex9YutpiyoJ+wKIHgCVlSEWZXh8=
-  dependencies:
-    get-value "^2.0.3"
-    has-values "^0.1.4"
-    isobject "^2.0.0"
-
-has-value@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-value/-/has-value-1.0.0.tgz"
-  integrity sha1-GLKB2lhbHFxR3vJMkw7SmgvmsXc=
-  dependencies:
-    get-value "^2.0.6"
-    has-values "^1.0.0"
-    isobject "^3.0.0"
-
-has-values@^0.1.4:
-  version "0.1.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-values/-/has-values-0.1.4.tgz"
-  integrity sha1-bWHeldkd/Km5oCCJrThL/49it3E=
-
-has-values@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-values/-/has-values-1.0.0.tgz"
-  integrity sha1-lbC2P+whRmGab+V/51Yo1aOe/k8=
-  dependencies:
-    is-number "^3.0.0"
-    kind-of "^4.0.0"
-
 has-yarn@^2.1.0:
   version "2.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/has-yarn/-/has-yarn-2.1.0.tgz"
@@ -2114,13 +1464,6 @@ highlight.js@^10.7.1:
   version "10.7.3"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/highlight.js/-/highlight.js-10.7.3.tgz"
   integrity sha1-aXJy45kTVuQMPKxWanTu9oF1ZTE=
-
-homedir-polyfill@^1.0.1:
-  version "1.0.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/homedir-polyfill/-/homedir-polyfill-1.0.3.tgz"
-  integrity sha1-dDKYzvTlrz4ZQWH7rcwhUdOgWOg=
-  dependencies:
-    parse-passwd "^1.0.0"
 
 http-cache-semantics@^4.0.0:
   version "4.1.0"
@@ -2163,11 +1506,6 @@ ignore-by-default@^1.0.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ignore-by-default/-/ignore-by-default-1.0.1.tgz"
   integrity sha1-SMptcvbGo68Aqa1K5odr44ieKwk=
 
-ignore@^5.1.4:
-  version "5.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ignore/-/ignore-5.2.0.tgz"
-  integrity sha1-bTusj6f+DUXZ+b57rC/CeVd+NFo=
-
 import-lazy@^2.1.0:
   version "2.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/import-lazy/-/import-lazy-2.1.0.tgz"
@@ -2186,7 +1524,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.3:
+inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3:
   version "2.0.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/inherits/-/inherits-2.0.4.tgz"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
@@ -2196,7 +1534,7 @@ ini@2.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ini/-/ini-2.0.0.tgz"
   integrity sha1-5f1Vbs3VcmvpePoQAYYurLCpS8U=
 
-ini@^1.3.4, ini@~1.3.0:
+ini@~1.3.0:
   version "1.3.8"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ini/-/ini-1.3.8.tgz"
   integrity sha1-op2kJbSIBvNHZ6Tvzjlyaa8oQyw=
@@ -2209,11 +1547,6 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
-
-interpret@^2.2.0:
-  version "2.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/interpret/-/interpret-2.2.0.tgz"
-  integrity sha1-GnigtZZcQKVBbQB61vUK0nxBffk=
 
 ioredis@^4.28.3:
   version "4.28.3"
@@ -2237,28 +1570,6 @@ ipaddr.js@1.9.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ipaddr.js/-/ipaddr.js-1.9.1.tgz"
   integrity sha1-v/OFQ+64mEglB5/zoqjmy9RngbM=
 
-is-absolute@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-absolute/-/is-absolute-1.0.0.tgz"
-  integrity sha1-OV4a6EsR8mrReV5zwXN45IowFXY=
-  dependencies:
-    is-relative "^1.0.0"
-    is-windows "^1.0.1"
-
-is-accessor-descriptor@^0.1.6:
-  version "0.1.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-accessor-descriptor/-/is-accessor-descriptor-0.1.6.tgz"
-  integrity sha1-qeEss66Nh2cn7u84Q/igiXtcmNY=
-  dependencies:
-    kind-of "^3.0.2"
-
-is-accessor-descriptor@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-accessor-descriptor/-/is-accessor-descriptor-1.0.0.tgz"
-  integrity sha1-FpwvbT3x+ZJhgHI2XJsOofaHhlY=
-  dependencies:
-    kind-of "^6.0.0"
-
 is-bigint@^1.0.1:
   version "1.0.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-bigint/-/is-bigint-1.0.4.tgz"
@@ -2281,11 +1592,6 @@ is-boolean-object@^1.1.0:
     call-bind "^1.0.2"
     has-tostringtag "^1.0.0"
 
-is-buffer@^1.1.5:
-  version "1.1.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-buffer/-/is-buffer-1.1.6.tgz"
-  integrity sha1-76ouqdqg16suoTqXsritUf776L4=
-
 is-callable@^1.1.3, is-callable@^1.1.4, is-callable@^1.2.4:
   version "1.2.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-callable/-/is-callable-1.2.4.tgz"
@@ -2298,63 +1604,12 @@ is-ci@^2.0.0:
   dependencies:
     ci-info "^2.0.0"
 
-is-core-module@^2.8.0:
-  version "2.8.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-core-module/-/is-core-module-2.8.0.tgz"
-  integrity sha1-AyEzbD0JJeSX/Zf12VyxFKXM1Ug=
-  dependencies:
-    has "^1.0.3"
-
-is-data-descriptor@^0.1.4:
-  version "0.1.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz"
-  integrity sha1-C17mSDiOLIYCgueT8YVv7D8wG1Y=
-  dependencies:
-    kind-of "^3.0.2"
-
-is-data-descriptor@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-data-descriptor/-/is-data-descriptor-1.0.0.tgz"
-  integrity sha1-2Eh2Mh0Oet0DmQQGq7u9NrqSaMc=
-  dependencies:
-    kind-of "^6.0.0"
-
 is-date-object@^1.0.1:
   version "1.0.5"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-date-object/-/is-date-object-1.0.5.tgz"
   integrity sha1-CEHVU25yTCVZe/bqYuG9OCmN8x8=
   dependencies:
     has-tostringtag "^1.0.0"
-
-is-descriptor@^0.1.0:
-  version "0.1.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-descriptor/-/is-descriptor-0.1.6.tgz"
-  integrity sha1-Nm2CQN3kh8pRgjsaufB6EKeCUco=
-  dependencies:
-    is-accessor-descriptor "^0.1.6"
-    is-data-descriptor "^0.1.4"
-    kind-of "^5.0.0"
-
-is-descriptor@^1.0.0, is-descriptor@^1.0.2:
-  version "1.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-descriptor/-/is-descriptor-1.0.2.tgz"
-  integrity sha1-OxWXRqZmBLBPjIFSS6NlxfFNhuw=
-  dependencies:
-    is-accessor-descriptor "^1.0.0"
-    is-data-descriptor "^1.0.0"
-    kind-of "^6.0.2"
-
-is-extendable@^0.1.0, is-extendable@^0.1.1:
-  version "0.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-extendable/-/is-extendable-0.1.1.tgz"
-  integrity sha1-YrEQ4omkcUGOPsNqYX1HLjAd/Ik=
-
-is-extendable@^1.0.1:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-extendable/-/is-extendable-1.0.1.tgz"
-  integrity sha1-p0cPnkJnM9gb2B4RVSZOOjUHyrQ=
-  dependencies:
-    is-plain-object "^2.0.4"
 
 is-extglob@^2.1.1:
   version "2.1.1"
@@ -2366,7 +1621,7 @@ is-fullwidth-code-point@^3.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz"
   integrity sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0=
 
-is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
+is-glob@^4.0.1, is-glob@~4.0.1:
   version "4.0.3"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-glob/-/is-glob-4.0.3.tgz"
   integrity sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=
@@ -2398,13 +1653,6 @@ is-number-object@^1.0.4:
   dependencies:
     has-tostringtag "^1.0.0"
 
-is-number@^3.0.0:
-  version "3.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-number/-/is-number-3.0.0.tgz"
-  integrity sha1-JP1iAaR4LPUFYcgQJ2r8fRLXEZU=
-  dependencies:
-    kind-of "^3.0.2"
-
 is-number@^7.0.0:
   version "7.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-number/-/is-number-7.0.0.tgz"
@@ -2420,13 +1668,6 @@ is-path-inside@^3.0.2:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-path-inside/-/is-path-inside-3.0.3.tgz"
   integrity sha1-0jE2LlOgf/Kw4Op/7QSRYf/RYoM=
 
-is-plain-object@^2.0.3, is-plain-object@^2.0.4:
-  version "2.0.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-plain-object/-/is-plain-object-2.0.4.tgz"
-  integrity sha1-LBY7P6+xtgbZ0Xko8FwqHDjgdnc=
-  dependencies:
-    isobject "^3.0.1"
-
 is-regex@^1.1.4:
   version "1.1.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-regex/-/is-regex-1.1.4.tgz"
@@ -2434,13 +1675,6 @@ is-regex@^1.1.4:
   dependencies:
     call-bind "^1.0.2"
     has-tostringtag "^1.0.0"
-
-is-relative@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-relative/-/is-relative-1.0.0.tgz"
-  integrity sha1-obtpNc6MXboei5dUubLcwCDiJg0=
-  dependencies:
-    is-unc-path "^1.0.0"
 
 is-shared-array-buffer@^1.0.1:
   version "1.0.1"
@@ -2466,13 +1700,6 @@ is-typedarray@^1.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-typedarray/-/is-typedarray-1.0.0.tgz"
   integrity sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
 
-is-unc-path@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-unc-path/-/is-unc-path-1.0.0.tgz"
-  integrity sha1-1zHoiY7QkKEsNSrS6u1Qla0yLJ0=
-  dependencies:
-    unc-path-regex "^0.1.2"
-
 is-weakref@^1.0.1:
   version "1.0.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-weakref/-/is-weakref-1.0.2.tgz"
@@ -2480,37 +1707,10 @@ is-weakref@^1.0.1:
   dependencies:
     call-bind "^1.0.2"
 
-is-windows@^1.0.1, is-windows@^1.0.2:
-  version "1.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-windows/-/is-windows-1.0.2.tgz"
-  integrity sha1-0YUOuXkezRjmGCzhKjDzlmNLsZ0=
-
 is-yarn-global@^0.3.0:
   version "0.3.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/is-yarn-global/-/is-yarn-global-0.3.0.tgz"
   integrity sha1-1QLTOCWQ6jAEiTdGdUyJE5lz4jI=
-
-isarray@1.0.0, isarray@~1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/isarray/-/isarray-1.0.0.tgz"
-  integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
-
-isexe@^2.0.0:
-  version "2.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/isexe/-/isexe-2.0.0.tgz"
-  integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
-
-isobject@^2.0.0:
-  version "2.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/isobject/-/isobject-2.1.0.tgz"
-  integrity sha1-8GVWEJaj8dou9GJy+BXIQNh+DIk=
-  dependencies:
-    isarray "1.0.0"
-
-isobject@^3.0.0, isobject@^3.0.1:
-  version "3.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/isobject/-/isobject-3.0.1.tgz"
-  integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
 iterall@^1.1.3, iterall@^1.2.1, iterall@^1.3.0:
   version "1.3.0"
@@ -2529,22 +1729,6 @@ json-buffer@3.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/json-buffer/-/json-buffer-3.0.0.tgz"
   integrity sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
 
-json5@^1.0.1:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/json5/-/json5-1.0.1.tgz"
-  integrity sha1-d5+wAYYE+oVOrL9iUhgNg1Q+Pb4=
-  dependencies:
-    minimist "^1.2.0"
-
-jsonfile@^6.0.1:
-  version "6.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/jsonfile/-/jsonfile-6.1.0.tgz"
-  integrity sha1-vFWyY0eTxnnsZAMJTrE2mKbsCq4=
-  dependencies:
-    universalify "^2.0.0"
-  optionalDependencies:
-    graceful-fs "^4.1.6"
-
 keyv@^3.0.0:
   version "3.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/keyv/-/keyv-3.1.0.tgz"
@@ -2552,75 +1736,12 @@ keyv@^3.0.0:
   dependencies:
     json-buffer "3.0.0"
 
-kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
-  version "3.2.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/kind-of/-/kind-of-3.2.2.tgz"
-  integrity sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
-  dependencies:
-    is-buffer "^1.1.5"
-
-kind-of@^4.0.0:
-  version "4.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/kind-of/-/kind-of-4.0.0.tgz"
-  integrity sha1-IIE989cSkosgc3hpGkUGb65y3Vc=
-  dependencies:
-    is-buffer "^1.1.5"
-
-kind-of@^5.0.0:
-  version "5.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/kind-of/-/kind-of-5.1.0.tgz"
-  integrity sha1-cpyR4thXt6QZofmqZWhcTDP1hF0=
-
-kind-of@^6.0.0, kind-of@^6.0.2:
-  version "6.0.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/kind-of/-/kind-of-6.0.3.tgz"
-  integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
-
-knex@0.21.19:
-  version "0.21.19"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/knex/-/knex-0.21.19.tgz"
-  integrity sha1-31BKGE6ynihiRYOdsIZ+PKFhrwA=
-  dependencies:
-    colorette "1.2.1"
-    commander "^6.2.0"
-    debug "4.3.1"
-    esm "^3.2.25"
-    getopts "2.2.5"
-    interpret "^2.2.0"
-    liftoff "3.1.0"
-    lodash "^4.17.20"
-    pg-connection-string "2.4.0"
-    tarn "^3.0.1"
-    tildify "2.0.0"
-    v8flags "^3.2.0"
-
 latest-version@^5.1.0:
   version "5.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/latest-version/-/latest-version-5.1.0.tgz"
   integrity sha1-EZ3+kI/jjRXfpD7NE/oS7Igy+s4=
   dependencies:
     package-json "^6.3.0"
-
-liftoff@3.1.0:
-  version "3.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/liftoff/-/liftoff-3.1.0.tgz"
-  integrity sha1-ybpggfkIZwYH7nkGLXAN8GLFLtM=
-  dependencies:
-    extend "^3.0.0"
-    findup-sync "^3.0.0"
-    fined "^1.0.1"
-    flagged-respawn "^1.0.0"
-    is-plain-object "^2.0.4"
-    object.map "^1.0.0"
-    rechoir "^0.6.2"
-    resolve "^1.1.7"
-
-locate-path@^5.0.0:
-  version "5.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/locate-path/-/locate-path-5.0.0.tgz"
-  integrity sha1-Gvujlq/WdqbUJQTQpno6frn2KqA=
-  dependencies:
-    p-locate "^4.1.0"
 
 lodash.defaults@^4.2.0:
   version "4.2.0"
@@ -2646,11 +1767,6 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/lodash.sortby/-/lodash.sortby-4.7.0.tgz"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
-
-lodash@^4.17.20:
-  version "4.17.21"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/lodash/-/lodash-4.17.21.tgz"
-  integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
 
 loglevel@^1.6.7:
   version "1.8.0"
@@ -2691,76 +1807,20 @@ make-error@^1.1.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/make-error/-/make-error-1.3.6.tgz"
   integrity sha1-LrLjfqm2fEiR9oShOUeZr0hM96I=
 
-make-iterator@^1.0.0:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/make-iterator/-/make-iterator-1.0.1.tgz"
-  integrity sha1-KbM/MSqo9UfEpeSQ9Wr87JkTOtY=
-  dependencies:
-    kind-of "^6.0.2"
-
-map-cache@^0.2.0, map-cache@^0.2.2:
-  version "0.2.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/map-cache/-/map-cache-0.2.2.tgz"
-  integrity sha1-wyq9C9ZSXZsFFkW7TyasXcmKDb8=
-
-map-visit@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/map-visit/-/map-visit-1.0.0.tgz"
-  integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
-  dependencies:
-    object-visit "^1.0.0"
-
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/media-typer/-/media-typer-0.3.0.tgz"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
-
-memory-pager@^1.0.2:
-  version "1.5.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/memory-pager/-/memory-pager-1.5.0.tgz"
-  integrity sha1-2HUWVdItOEaCdByXLyw9bfo+ZrU=
 
 merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/merge-descriptors/-/merge-descriptors-1.0.1.tgz"
   integrity sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E=
 
-merge2@^1.3.0:
-  version "1.4.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/merge2/-/merge2-1.4.1.tgz"
-  integrity sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=
-
 methods@~1.1.2:
   version "1.1.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/methods/-/methods-1.1.2.tgz"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
-
-micromatch@^3.0.4:
-  version "3.1.10"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/micromatch/-/micromatch-3.1.10.tgz"
-  integrity sha1-cIWbyVyYQJUvNZoGij/En57PrCM=
-  dependencies:
-    arr-diff "^4.0.0"
-    array-unique "^0.3.2"
-    braces "^2.3.1"
-    define-property "^2.0.2"
-    extend-shallow "^3.0.2"
-    extglob "^2.0.4"
-    fragment-cache "^0.2.1"
-    kind-of "^6.0.2"
-    nanomatch "^1.2.9"
-    object.pick "^1.3.0"
-    regex-not "^1.0.0"
-    snapdragon "^0.8.1"
-    to-regex "^3.0.2"
-
-micromatch@^4.0.4:
-  version "4.0.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/micromatch/-/micromatch-4.0.4.tgz"
-  integrity sha1-iW1Rnf6dsl/OlM63pQCRm/iB6/k=
-  dependencies:
-    braces "^3.0.1"
-    picomatch "^2.2.3"
 
 mime-db@1.51.0:
   version "1.51.0"
@@ -2811,31 +1871,10 @@ minizlib@^2.1.1:
     minipass "^3.0.0"
     yallist "^4.0.0"
 
-mixin-deep@^1.2.0:
-  version "1.3.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/mixin-deep/-/mixin-deep-1.3.2.tgz"
-  integrity sha1-ESC0PcNZp4Xc5ltVuC4lfM9HlWY=
-  dependencies:
-    for-in "^1.0.2"
-    is-extendable "^1.0.1"
-
 mkdirp@^1.0.3, mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/mkdirp/-/mkdirp-1.0.4.tgz"
   integrity sha1-PrXtYmInVteaXw4qIh3+utdcL34=
-
-mongodb@*:
-  version "3.7.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/mongodb/-/mongodb-3.7.3.tgz"
-  integrity sha1-t5Sc/QrcTMfTLT8gNCFNRHXxdaU=
-  dependencies:
-    bl "^2.2.1"
-    bson "^1.1.4"
-    denque "^1.4.1"
-    optional-require "^1.1.8"
-    safe-buffer "^5.1.2"
-  optionalDependencies:
-    saslprep "^1.0.0"
 
 ms@2.0.0:
   version "2.0.0"
@@ -2860,23 +1899,6 @@ mz@^2.4.0:
     any-promise "^1.0.0"
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
-
-nanomatch@^1.2.9:
-  version "1.2.13"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/nanomatch/-/nanomatch-1.2.13.tgz"
-  integrity sha1-uHqKpPwN6P5r6IiVs4mD/yZb0Rk=
-  dependencies:
-    arr-diff "^4.0.0"
-    array-unique "^0.3.2"
-    define-property "^2.0.2"
-    extend-shallow "^3.0.2"
-    fragment-cache "^0.2.1"
-    is-windows "^1.0.2"
-    kind-of "^6.0.2"
-    object.pick "^1.3.0"
-    regex-not "^1.0.0"
-    snapdragon "^0.8.1"
-    to-regex "^3.0.1"
 
 negotiator@0.6.2:
   version "0.6.2"
@@ -2950,19 +1972,10 @@ npmlog@^5.0.1:
     gauge "^3.0.0"
     set-blocking "^2.0.0"
 
-object-assign@^4, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
+object-assign@^4, object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object-assign/-/object-assign-4.1.1.tgz"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
-
-object-copy@^0.1.0:
-  version "0.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object-copy/-/object-copy-0.1.0.tgz"
-  integrity sha1-fn2Fi3gb18mRpBupde04EnVOmYw=
-  dependencies:
-    copy-descriptor "^0.1.0"
-    define-property "^0.2.5"
-    kind-of "^3.0.3"
 
 object-inspect@^1.11.0, object-inspect@^1.9.0:
   version "1.12.0"
@@ -2979,13 +1992,6 @@ object-path@^0.11.4:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object-path/-/object-path-0.11.8.tgz"
   integrity sha1-7QAsArvdAHC3iidFXorgH8FNR0I=
 
-object-visit@^1.0.0:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object-visit/-/object-visit-1.0.1.tgz"
-  integrity sha1-95xEk68MU3e1n+OdOV5BBC3QRbs=
-  dependencies:
-    isobject "^3.0.0"
-
 object.assign@^4.1.2:
   version "4.1.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object.assign/-/object.assign-4.1.2.tgz"
@@ -2996,16 +2002,6 @@ object.assign@^4.1.2:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
-object.defaults@^1.1.0:
-  version "1.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object.defaults/-/object.defaults-1.1.0.tgz"
-  integrity sha1-On+GgzS0B96gbaFtiNXNKeQ1/s8=
-  dependencies:
-    array-each "^1.0.1"
-    array-slice "^1.0.0"
-    for-own "^1.0.0"
-    isobject "^3.0.0"
-
 object.getownpropertydescriptors@^2.1.1:
   version "2.1.3"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object.getownpropertydescriptors/-/object.getownpropertydescriptors-2.1.3.tgz"
@@ -3014,21 +2010,6 @@ object.getownpropertydescriptors@^2.1.1:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
-
-object.map@^1.0.0:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object.map/-/object.map-1.0.1.tgz"
-  integrity sha1-z4Plncj8wK1fQlDh94s7gb2AHTc=
-  dependencies:
-    for-own "^1.0.0"
-    make-iterator "^1.0.0"
-
-object.pick@^1.2.0, object.pick@^1.3.0:
-  version "1.3.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/object.pick/-/object.pick-1.3.0.tgz"
-  integrity sha1-h6EKxMFpS9Lhy/U1kaZhQftd10c=
-  dependencies:
-    isobject "^3.0.1"
 
 on-finished@~2.3.0:
   version "2.3.0"
@@ -3054,41 +2035,15 @@ opencollective-postinstall@^2.0.3:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz"
   integrity sha1-eg//l49tv6TQBiOPusmO1BmMMlk=
 
-optional-require@^1.1.8:
-  version "1.1.8"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/optional-require/-/optional-require-1.1.8.tgz"
-  integrity sha1-FjZNdiYbddlkxIKyQGy4JNjsRLc=
-  dependencies:
-    require-at "^1.0.6"
-
 p-cancelable@^1.0.0:
   version "1.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/p-cancelable/-/p-cancelable-1.1.0.tgz"
   integrity sha1-0HjRWjr0CSIMiG8dmgyi5EGrJsw=
 
-p-limit@^2.2.0:
-  version "2.3.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/p-limit/-/p-limit-2.3.0.tgz"
-  integrity sha1-PdM8ZHohT9//2DWTPrCG2g3CHbE=
-  dependencies:
-    p-try "^2.0.0"
-
-p-locate@^4.1.0:
-  version "4.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/p-locate/-/p-locate-4.1.0.tgz"
-  integrity sha1-o0KLtwiLOmApL2aRkni3wpetTwc=
-  dependencies:
-    p-limit "^2.2.0"
-
 p-map@^2.1.0:
   version "2.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/p-map/-/p-map-2.1.0.tgz#310928feef9c9ecc65b68b17693018a665cea175"
   integrity sha1-MQko/u+cnsxltosXaTAYpmXOoXU=
-
-p-try@^2.0.0:
-  version "2.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/p-try/-/p-try-2.2.0.tgz"
-  integrity sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=
 
 package-json@^6.3.0:
   version "6.5.0"
@@ -3104,25 +2059,6 @@ packet-reader@1.0.0:
   version "1.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/packet-reader/-/packet-reader-1.0.0.tgz"
   integrity sha1-kjjlSA3tq6z+H+PydxBj8WQVfXQ=
-
-parent-require@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/parent-require/-/parent-require-1.0.0.tgz"
-  integrity sha1-dGoWdjgIOoYLDu9nMssn7UbDKXc=
-
-parse-filepath@^1.0.1:
-  version "1.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/parse-filepath/-/parse-filepath-1.0.2.tgz"
-  integrity sha1-pjISf1Oq89FYdvWHLz/6x2PWyJE=
-  dependencies:
-    is-absolute "^1.0.0"
-    map-cache "^0.2.0"
-    path-root "^0.1.1"
-
-parse-passwd@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/parse-passwd/-/parse-passwd-1.0.0.tgz"
-  integrity sha1-bVuTSkVpk7I9N/QKOC1vFmao5cY=
 
 parse5-htmlparser2-tree-adapter@^6.0.0:
   version "6.0.1"
@@ -3146,52 +2082,15 @@ parseurl@^1.3.2, parseurl@~1.3.3:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/parseurl/-/parseurl-1.3.3.tgz"
   integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
 
-pascalcase@^0.1.1:
-  version "0.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/pascalcase/-/pascalcase-0.1.1.tgz"
-  integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
-
-path-exists@^4.0.0:
-  version "4.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/path-exists/-/path-exists-4.0.0.tgz"
-  integrity sha1-UTvb4tO5XXdi6METfvoZXGxhtbM=
-
 path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/path-is-absolute/-/path-is-absolute-1.0.1.tgz"
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
-path-parse@^1.0.7:
-  version "1.0.7"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/path-parse/-/path-parse-1.0.7.tgz"
-  integrity sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=
-
-path-root-regex@^0.1.0:
-  version "0.1.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/path-root-regex/-/path-root-regex-0.1.2.tgz"
-  integrity sha1-v8zcjfWxLcUsi0PsONGNcsBLqW0=
-
-path-root@^0.1.1:
-  version "0.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/path-root/-/path-root-0.1.1.tgz"
-  integrity sha1-mkpoFMrBwM1zNgqV8yCDyOpHRbc=
-  dependencies:
-    path-root-regex "^0.1.0"
-
 path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/path-to-regexp/-/path-to-regexp-0.1.7.tgz"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
-
-path-type@^4.0.0:
-  version "4.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/path-type/-/path-type-4.0.0.tgz"
-  integrity sha1-hO0BwKe6OAr+CdkKjBgNzZ0DBDs=
-
-pg-connection-string@2.4.0:
-  version "2.4.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/pg-connection-string/-/pg-connection-string-2.4.0.tgz"
-  integrity sha1-yXmSLrR4MpmaIE2l2+Hr8jQbahA=
 
 pg-connection-string@^2.5.0:
   version "2.5.0"
@@ -3203,7 +2102,7 @@ pg-int8@1.0.1:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/pg-int8/-/pg-int8-1.0.1.tgz"
   integrity sha1-lDvUY79bcbQXARX4D478mgwOt4w=
 
-pg-pool@^3.3.0, pg-pool@^3.4.1:
+pg-pool@^3.4.1:
   version "3.4.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/pg-pool/-/pg-pool-3.4.1.tgz"
   integrity sha1-DnHOLGe0QqXoYqnBghcsN+2nHpw=
@@ -3223,19 +2122,6 @@ pg-types@^2.1.0:
     postgres-bytea "~1.0.0"
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
-
-pg@8.6.0:
-  version "8.6.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/pg/-/pg-8.6.0.tgz"
-  integrity sha1-4iIpawsHmygMzhBuqZFwMzVIfbI=
-  dependencies:
-    buffer-writer "2.0.0"
-    packet-reader "1.0.0"
-    pg-connection-string "^2.5.0"
-    pg-pool "^3.3.0"
-    pg-protocol "^1.5.0"
-    pg-types "^2.1.0"
-    pgpass "1.x"
 
 pg@^8.7.1:
   version "8.7.1"
@@ -3257,15 +2143,10 @@ pgpass@1.x:
   dependencies:
     split2 "^4.1.0"
 
-picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
+picomatch@^2.0.4, picomatch@^2.2.1:
   version "2.3.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/picomatch/-/picomatch-2.3.1.tgz"
   integrity sha1-O6ODNzNkbZ0+SZWUbBNlpn+wekI=
-
-posix-character-classes@^0.1.0:
-  version "0.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
-  integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
 postgres-array@~2.0.0:
   version "2.0.0"
@@ -3293,11 +2174,6 @@ prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/prepend-http/-/prepend-http-2.0.0.tgz"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
-
-process-nextick-args@~2.0.0:
-  version "2.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
-  integrity sha1-eCDZsWEgzFXKmud5JoCufbptf+I=
 
 proxy-addr@~2.0.7:
   version "2.0.7"
@@ -3332,11 +2208,6 @@ qs@6.9.6:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/qs/-/qs-6.9.6.tgz"
   integrity sha1-Ju08gkOkMbKSSsqEzJBHHzXVoO4=
 
-queue-microtask@^1.2.2:
-  version "1.2.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/queue-microtask/-/queue-microtask-1.2.3.tgz"
-  integrity sha1-SSkii7xyTfrEPg77BYyve2z7YkM=
-
 random-bytes@~1.0.0:
   version "1.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/random-bytes/-/random-bytes-1.0.0.tgz"
@@ -3367,19 +2238,6 @@ rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-readable-stream@^2.3.5:
-  version "2.3.7"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/readable-stream/-/readable-stream-2.3.7.tgz"
-  integrity sha1-Hsoc9xGu+BTAT2IlKjamL2yyO1c=
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.3"
-    isarray "~1.0.0"
-    process-nextick-args "~2.0.0"
-    safe-buffer "~5.1.1"
-    string_decoder "~1.1.1"
-    util-deprecate "~1.0.1"
-
 readable-stream@^3.6.0:
   version "3.6.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/readable-stream/-/readable-stream-3.6.0.tgz"
@@ -3395,13 +2253,6 @@ readdirp@~3.6.0:
   integrity sha1-dKNwvYVxFuJFspzJc0DNQxoCpsc=
   dependencies:
     picomatch "^2.2.1"
-
-rechoir@^0.6.2:
-  version "0.6.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/rechoir/-/rechoir-0.6.2.tgz"
-  integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
-  dependencies:
-    resolve "^1.1.6"
 
 redis-commands@1.7.0:
   version "1.7.0"
@@ -3420,18 +2271,10 @@ redis-parser@^3.0.0:
   dependencies:
     redis-errors "^1.0.0"
 
-reflect-metadata@0.1.13, reflect-metadata@^0.1.13:
+reflect-metadata@^0.1.13:
   version "0.1.13"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/reflect-metadata/-/reflect-metadata-0.1.13.tgz"
   integrity sha1-Z648pXyXKiqhZCsQ/jY/4y1J3Ag=
-
-regex-not@^1.0.0, regex-not@^1.0.2:
-  version "1.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/regex-not/-/regex-not-1.0.2.tgz"
-  integrity sha1-H07OJ+ALC2XgJHpoEOaoXYOldSw=
-  dependencies:
-    extend-shallow "^3.0.2"
-    safe-regex "^1.1.0"
 
 registry-auth-token@^4.0.0:
   version "4.2.1"
@@ -3447,52 +2290,10 @@ registry-url@^5.0.0:
   dependencies:
     rc "^1.2.8"
 
-repeat-element@^1.1.2:
-  version "1.1.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/repeat-element/-/repeat-element-1.1.4.tgz"
-  integrity sha1-vmgVIIR6tYx1aKx1+/rSjtQtOek=
-
-repeat-string@^1.6.1:
-  version "1.6.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/repeat-string/-/repeat-string-1.6.1.tgz"
-  integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
-
-require-at@^1.0.6:
-  version "1.0.6"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/require-at/-/require-at-1.0.6.tgz"
-  integrity sha1-nrfjxeAHJ/WkdEBwp/Vg1N5Pbmo=
-
 require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/require-directory/-/require-directory-2.1.1.tgz"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
-
-require-main-filename@^2.0.0:
-  version "2.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/require-main-filename/-/require-main-filename-2.0.0.tgz"
-  integrity sha1-0LMp7MfMD2Fkn2IhW+aa9UqomJs=
-
-resolve-dir@^1.0.0, resolve-dir@^1.0.1:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/resolve-dir/-/resolve-dir-1.0.1.tgz"
-  integrity sha1-eaQGRMNivoLybv/nOcm7U4IEb0M=
-  dependencies:
-    expand-tilde "^2.0.0"
-    global-modules "^1.0.0"
-
-resolve-url@^0.2.1:
-  version "0.2.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/resolve-url/-/resolve-url-0.2.1.tgz"
-  integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
-
-resolve@^1.1.6, resolve@^1.1.7:
-  version "1.21.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/resolve/-/resolve-1.21.0.tgz"
-  integrity sha1-tRrcl/NHLmpc9ERNNLyda5A3WR8=
-  dependencies:
-    is-core-module "^2.8.0"
-    path-parse "^1.0.7"
-    supports-preserve-symlinks-flag "^1.0.0"
 
 responselike@^1.0.2:
   version "1.0.2"
@@ -3501,20 +2302,10 @@ responselike@^1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
-ret@~0.1.10:
-  version "0.1.15"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/ret/-/ret-0.1.15.tgz"
-  integrity sha1-uKSCXVvbH8P29Twrwz+BOIaBx7w=
-
 retry@0.13.1:
   version "0.13.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/retry/-/retry-0.13.1.tgz"
   integrity sha1-GFsVh6z2eRnWOzVzSeA1N7JIRlg=
-
-reusify@^1.0.4:
-  version "1.0.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/reusify/-/reusify-1.0.4.tgz"
-  integrity sha1-kNo4Kx4SbvwCFG6QhFqI2xKSXXY=
 
 rimraf@^3.0.2:
   version "3.0.2"
@@ -3523,41 +2314,15 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-run-parallel@^1.1.9:
-  version "1.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/run-parallel/-/run-parallel-1.2.0.tgz"
-  integrity sha1-ZtE2jae9+SHrnZW9GpIp5/IaQ+4=
-  dependencies:
-    queue-microtask "^1.2.2"
-
-safe-buffer@5.2.1, safe-buffer@^5.0.1, safe-buffer@^5.1.2, safe-buffer@~5.2.0:
+safe-buffer@5.2.1, safe-buffer@^5.0.1, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/safe-buffer/-/safe-buffer-5.2.1.tgz"
   integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
-
-safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
-  version "5.1.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/safe-buffer/-/safe-buffer-5.1.2.tgz"
-  integrity sha1-mR7GnSluAxN0fVm9/St0XDX4go0=
-
-safe-regex@^1.1.0:
-  version "1.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/safe-regex/-/safe-regex-1.1.0.tgz"
-  integrity sha1-QKNmnzsHfR6UPURinhV91IAjvy4=
-  dependencies:
-    ret "~0.1.10"
 
 "safer-buffer@>= 2.1.2 < 3":
   version "2.1.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
-
-saslprep@^1.0.0:
-  version "1.0.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/saslprep/-/saslprep-1.0.3.tgz"
-  integrity sha1-TAL5RrVs9UKX40e6EJPnrKxM8iY=
-  dependencies:
-    sparse-bitfield "^3.0.3"
 
 sax@>=0.6.0:
   version "1.2.4"
@@ -3622,16 +2387,6 @@ set-blocking@^2.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/set-blocking/-/set-blocking-2.0.0.tgz"
   integrity sha1-BF+XgtARrppoA93TgrJDkrPYkPc=
 
-set-value@^2.0.0, set-value@^2.0.1:
-  version "2.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/set-value/-/set-value-2.0.1.tgz"
-  integrity sha1-oY1AUw5vB95CKMfe/kInr4ytAFs=
-  dependencies:
-    extend-shallow "^2.0.1"
-    is-extendable "^0.1.1"
-    is-plain-object "^2.0.3"
-    split-string "^3.0.1"
-
 setprototypeof@1.2.0:
   version "1.2.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/setprototypeof/-/setprototypeof-1.2.0.tgz"
@@ -3659,98 +2414,15 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/signal-exit/-/signal-exit-3.0.6.tgz"
   integrity sha1-JOYwxLDwP+pEaivSmeYrSmyo0K8=
 
-slash@^3.0.0:
-  version "3.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/slash/-/slash-3.0.0.tgz"
-  integrity sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=
-
-snapdragon-node@^2.0.1:
-  version "2.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/snapdragon-node/-/snapdragon-node-2.1.1.tgz"
-  integrity sha1-bBdfhv8UvbByRWPo88GwIaKGhTs=
-  dependencies:
-    define-property "^1.0.0"
-    isobject "^3.0.0"
-    snapdragon-util "^3.0.1"
-
-snapdragon-util@^3.0.1:
-  version "3.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/snapdragon-util/-/snapdragon-util-3.0.1.tgz"
-  integrity sha1-+VZHlIbyrNeXAGk/b3uAXkWrVuI=
-  dependencies:
-    kind-of "^3.2.0"
-
-snapdragon@^0.8.1:
-  version "0.8.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/snapdragon/-/snapdragon-0.8.2.tgz"
-  integrity sha1-ZJIufFZbDhQgS6GqfWlkJ40lGC0=
-  dependencies:
-    base "^0.11.1"
-    debug "^2.2.0"
-    define-property "^0.2.5"
-    extend-shallow "^2.0.1"
-    map-cache "^0.2.2"
-    source-map "^0.5.6"
-    source-map-resolve "^0.5.0"
-    use "^3.1.0"
-
-source-map-resolve@^0.5.0:
-  version "0.5.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/source-map-resolve/-/source-map-resolve-0.5.3.tgz"
-  integrity sha1-GQhmvs51U+H48mei7oLGBrVQmho=
-  dependencies:
-    atob "^2.1.2"
-    decode-uri-component "^0.2.0"
-    resolve-url "^0.2.1"
-    source-map-url "^0.4.0"
-    urix "^0.1.0"
-
-source-map-url@^0.4.0:
-  version "0.4.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/source-map-url/-/source-map-url-0.4.1.tgz"
-  integrity sha1-CvZmBadFpaL5HPG7+KevvCg97FY=
-
-source-map@^0.5.6:
-  version "0.5.7"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/source-map/-/source-map-0.5.7.tgz"
-  integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
-
-sparse-bitfield@^3.0.3:
-  version "3.0.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz"
-  integrity sha1-/0rm5oZWBWuks+eSqzM004JzyhE=
-  dependencies:
-    memory-pager "^1.0.2"
-
-split-string@^3.0.1, split-string@^3.0.2:
-  version "3.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/split-string/-/split-string-3.1.0.tgz"
-  integrity sha1-fLCd2jqGWFcFxks5pkZgOGguj+I=
-  dependencies:
-    extend-shallow "^3.0.0"
-
 split2@^4.1.0:
   version "4.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/split2/-/split2-4.1.0.tgz"
   integrity sha1-EBkHokNw+Fu3gvCK2qvk4oHs+Ak=
 
-sqlstring@2.3.2:
-  version "2.3.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/sqlstring/-/sqlstring-2.3.2.tgz"
-  integrity sha1-za5xaTiaE3WxjohfLmCz5GCAlRQ=
-
 standard-as-callback@^2.1.0:
   version "2.1.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/standard-as-callback/-/standard-as-callback-2.1.0.tgz#8953fc05359868a77b5b9739a665c5977bb7df45"
   integrity sha1-iVP8BTWYaKd7W5c5pmXFl3u330U=
-
-static-extend@^0.1.1:
-  version "0.1.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/static-extend/-/static-extend-0.1.2.tgz"
-  integrity sha1-YICcOcv/VTNyJv1eC1IPNB8ftcY=
-  dependencies:
-    define-property "^0.2.5"
-    object-copy "^0.1.0"
 
 "statuses@>= 1.5.0 < 2", statuses@~1.5.0:
   version "1.5.0"
@@ -3794,36 +2466,12 @@ string_decoder@^1.1.1:
   dependencies:
     safe-buffer "~5.2.0"
 
-string_decoder@~1.1.1:
-  version "1.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/string_decoder/-/string_decoder-1.1.1.tgz"
-  integrity sha1-nPFhG6YmhdcDCunkujQUnDrwP8g=
-  dependencies:
-    safe-buffer "~5.1.0"
-
-strip-ansi@^3.0.0:
-  version "3.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/strip-ansi/-/strip-ansi-3.0.1.tgz"
-  integrity sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
-  dependencies:
-    ansi-regex "^2.0.0"
-
 strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/strip-ansi/-/strip-ansi-6.0.1.tgz"
   integrity sha1-nibGPTD1NEPpSJSVshBdN7Z6hdk=
   dependencies:
     ansi-regex "^5.0.1"
-
-strip-bom@^3.0.0:
-  version "3.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/strip-bom/-/strip-bom-3.0.0.tgz"
-  integrity sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
-
-strip-json-comments@3.1.1:
-  version "3.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
-  integrity sha1-MfEoGzgyYwQ0gxwxDAHMzajL4AY=
 
 strip-json-comments@~2.0.1:
   version "2.0.1"
@@ -3841,11 +2489,6 @@ subscriptions-transport-ws@^0.9.19:
     symbol-observable "^1.0.4"
     ws "^5.2.0 || ^6.0.0 || ^7.0.0"
 
-supports-color@^2.0.0:
-  version "2.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/supports-color/-/supports-color-2.0.0.tgz"
-  integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
-
 supports-color@^5.5.0:
   version "5.5.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/supports-color/-/supports-color-5.5.0.tgz"
@@ -3859,11 +2502,6 @@ supports-color@^7.1.0:
   integrity sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=
   dependencies:
     has-flag "^4.0.0"
-
-supports-preserve-symlinks-flag@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
-  integrity sha1-btpL00SjyUrqN21MwxvHcxEDngk=
 
 symbol-observable@^1.0.4:
   version "1.2.0"
@@ -3882,11 +2520,6 @@ tar@^6.1.11:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-tarn@^3.0.1:
-  version "3.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/tarn/-/tarn-3.0.2.tgz"
-  integrity sha1-c7YUD7uIG3FVnE+L/ePZpLPSdpM=
-
 thenify-all@^1.0.0:
   version "1.6.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/thenify-all/-/thenify-all-1.6.0.tgz"
@@ -3901,30 +2534,10 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
-tildify@2.0.0:
-  version "2.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/tildify/-/tildify-2.0.0.tgz"
-  integrity sha1-8gXzZ01nfOaYtwZ6melJzgO0dUo=
-
-to-object-path@^0.3.0:
-  version "0.3.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/to-object-path/-/to-object-path-0.3.0.tgz"
-  integrity sha1-KXWIt7Dn4KwI4E5nL4XB9JmeF68=
-  dependencies:
-    kind-of "^3.0.2"
-
 to-readable-stream@^1.0.0:
   version "1.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/to-readable-stream/-/to-readable-stream-1.0.0.tgz"
   integrity sha1-zgqgwvPfat+FLvtASng+d8BHV3E=
-
-to-regex-range@^2.1.0:
-  version "2.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/to-regex-range/-/to-regex-range-2.1.1.tgz"
-  integrity sha1-fIDBe53+vlmeJzZ+DU3VWQFB2zg=
-  dependencies:
-    is-number "^3.0.0"
-    repeat-string "^1.6.1"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
@@ -3932,16 +2545,6 @@ to-regex-range@^5.0.1:
   integrity sha1-FkjESq58jZiKMmAY7XL1tN0DkuQ=
   dependencies:
     is-number "^7.0.0"
-
-to-regex@^3.0.1, to-regex@^3.0.2:
-  version "3.0.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/to-regex/-/to-regex-3.0.2.tgz"
-  integrity sha1-E8/dmzNlUvMLUfM6iuG0Knp1mc4=
-  dependencies:
-    define-property "^2.0.2"
-    extend-shallow "^3.0.2"
-    regex-not "^1.0.2"
-    safe-regex "^1.1.0"
 
 toidentifier@1.0.1:
   version "1.0.1"
@@ -3984,16 +2587,6 @@ ts-node@^10.4.0:
     diff "^4.0.1"
     make-error "^1.1.1"
     yn "3.1.1"
-
-tsconfig-paths@3.9.0:
-  version "3.9.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/tsconfig-paths/-/tsconfig-paths-3.9.0.tgz"
-  integrity sha1-CYVHpsREiAfo/Ljq4IEGTumjyQs=
-  dependencies:
-    "@types/json5" "^0.0.29"
-    json5 "^1.0.1"
-    minimist "^1.2.0"
-    strip-bom "^3.0.0"
 
 tslib@^1.10.0, tslib@^1.9.3:
   version "1.14.1"
@@ -4073,13 +2666,6 @@ uid-safe@~2.1.5:
   dependencies:
     random-bytes "~1.0.0"
 
-umzug@2.3.0:
-  version "2.3.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/umzug/-/umzug-2.3.0.tgz"
-  integrity sha1-DvQrYt9U4hawXcr2J4MKaouEoYQ=
-  dependencies:
-    bluebird "^3.7.2"
-
 unbox-primitive@^1.0.1:
   version "1.0.1"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/unbox-primitive/-/unbox-primitive-1.0.1.tgz"
@@ -4090,25 +2676,10 @@ unbox-primitive@^1.0.1:
     has-symbols "^1.0.2"
     which-boxed-primitive "^1.0.2"
 
-unc-path-regex@^0.1.2:
-  version "0.1.2"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/unc-path-regex/-/unc-path-regex-0.1.2.tgz"
-  integrity sha1-5z3T17DXxe2G+6xrCufYxqadUPo=
-
 undefsafe@^2.0.5:
   version "2.0.5"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/undefsafe/-/undefsafe-2.0.5.tgz"
   integrity sha1-OHM7kye9zSJtuIn7cjpu/RYubiw=
-
-union-value@^1.0.0:
-  version "1.0.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/union-value/-/union-value-1.0.1.tgz"
-  integrity sha1-C2/nuDWuzaYcbqTU8CwUIh4QmEc=
-  dependencies:
-    arr-union "^3.1.0"
-    get-value "^2.0.6"
-    is-extendable "^0.1.1"
-    set-value "^2.0.1"
 
 unique-string@^2.0.0:
   version "2.0.0"
@@ -4117,23 +2688,10 @@ unique-string@^2.0.0:
   dependencies:
     crypto-random-string "^2.0.0"
 
-universalify@^2.0.0:
-  version "2.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/universalify/-/universalify-2.0.0.tgz"
-  integrity sha1-daSYTv7cSwiXXFrrc/Uw0C3yVxc=
-
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/unpipe/-/unpipe-1.0.0.tgz"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
-
-unset-value@^1.0.0:
-  version "1.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/unset-value/-/unset-value-1.0.0.tgz"
-  integrity sha1-g3aHP30jNRef+x5vw6jtDfyKtVk=
-  dependencies:
-    has-value "^0.3.1"
-    isobject "^3.0.0"
 
 update-notifier@^5.1.0:
   version "5.1.0"
@@ -4155,11 +2713,6 @@ update-notifier@^5.1.0:
     semver-diff "^3.1.1"
     xdg-basedir "^4.0.0"
 
-urix@^0.1.0:
-  version "0.1.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/urix/-/urix-0.1.0.tgz"
-  integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
-
 url-parse-lax@^3.0.0:
   version "3.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/url-parse-lax/-/url-parse-lax-3.0.0.tgz"
@@ -4167,12 +2720,7 @@ url-parse-lax@^3.0.0:
   dependencies:
     prepend-http "^2.0.0"
 
-use@^3.1.0:
-  version "3.1.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/use/-/use-3.1.1.tgz"
-  integrity sha1-1QyMrHmhn7wg8pEfVuuXP04QBw8=
-
-util-deprecate@^1.0.1, util-deprecate@~1.0.1:
+util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
@@ -4203,13 +2751,6 @@ uuid@^8.0.0, uuid@^8.3.2:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/uuid/-/uuid-8.3.2.tgz"
   integrity sha1-gNW1ztJxu5r2xEXyGhoExgbO++I=
 
-v8flags@^3.2.0:
-  version "3.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/v8flags/-/v8flags-3.2.0.tgz"
-  integrity sha1-skPjtN/XMfp3TnSSEoEJoP5m1lY=
-  dependencies:
-    homedir-polyfill "^1.0.1"
-
 vary@^1, vary@~1.1.2:
   version "1.1.2"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/vary/-/vary-1.1.2.tgz"
@@ -4239,18 +2780,6 @@ which-boxed-primitive@^1.0.2:
     is-string "^1.0.5"
     is-symbol "^1.0.3"
 
-which-module@^2.0.0:
-  version "2.0.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/which-module/-/which-module-2.0.0.tgz"
-  integrity sha1-2e8H3Od7mQK4o6j6SzHD4/fm6Ho=
-
-which@^1.2.14:
-  version "1.3.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/which/-/which-1.3.1.tgz"
-  integrity sha1-pFBD1U9YBTFtqNYvn1CRjT2nCwo=
-  dependencies:
-    isexe "^2.0.0"
-
 wide-align@^1.1.2:
   version "1.1.5"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/wide-align/-/wide-align-1.1.5.tgz"
@@ -4264,15 +2793,6 @@ widest-line@^3.1.0:
   integrity sha1-gpIzO79my0X/DeFgOxNreuFJbso=
   dependencies:
     string-width "^4.0.0"
-
-wrap-ansi@^6.2.0:
-  version "6.2.0"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/wrap-ansi/-/wrap-ansi-6.2.0.tgz"
-  integrity sha1-6Tk7oHEC5skaOyIUePAlfNKFblM=
-  dependencies:
-    ansi-styles "^4.0.0"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
@@ -4334,11 +2854,6 @@ xtend@^4.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/xtend/-/xtend-4.0.2.tgz"
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
 
-y18n@^4.0.0:
-  version "4.0.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/y18n/-/y18n-4.0.3.tgz"
-  integrity sha1-tfJZyCzW4zaSHv17/Yv1YN6e7t8=
-
 y18n@^5.0.5:
   version "5.0.8"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/y18n/-/y18n-5.0.8.tgz"
@@ -4349,23 +2864,6 @@ yallist@^4.0.0:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/yallist/-/yallist-4.0.0.tgz"
   integrity sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=
 
-yargonaut@1.1.4:
-  version "1.1.4"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/yargonaut/-/yargonaut-1.1.4.tgz"
-  integrity sha1-xk9WQyx0ZScSIfU/XMUXiQw9bgw=
-  dependencies:
-    chalk "^1.1.1"
-    figlet "^1.1.1"
-    parent-require "^1.0.0"
-
-yargs-parser@^18.1.2:
-  version "18.1.3"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/yargs-parser/-/yargs-parser-18.1.3.tgz"
-  integrity sha1-vmjEl1xrKr9GkjawyHA2L6sJp7A=
-  dependencies:
-    camelcase "^5.0.0"
-    decamelize "^1.2.0"
-
 yargs-parser@^20.2.2:
   version "20.2.9"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/yargs-parser/-/yargs-parser-20.2.9.tgz"
@@ -4375,23 +2873,6 @@ yargs-parser@^21.0.0:
   version "21.0.0"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/yargs-parser/-/yargs-parser-21.0.0.tgz"
   integrity sha1-pIXTlmvkMXQm3Va9tqMBMbKB3FU=
-
-yargs@15.4.1:
-  version "15.4.1"
-  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/yargs/-/yargs-15.4.1.tgz"
-  integrity sha1-DYehbeAa7p2L7Cv7909nhRcw9Pg=
-  dependencies:
-    cliui "^6.0.0"
-    decamelize "^1.2.0"
-    find-up "^4.1.0"
-    get-caller-file "^2.0.1"
-    require-directory "^2.1.1"
-    require-main-filename "^2.0.0"
-    set-blocking "^2.0.0"
-    string-width "^4.2.0"
-    which-module "^2.0.0"
-    y18n "^4.0.0"
-    yargs-parser "^18.1.2"
 
 yargs@^16.0.0:
   version "16.2.0"

@@ -7,22 +7,26 @@ import { HelloResolver } from './resolvers/hello';
 import { PostResolver } from './resolvers/post';
 import { UserResolver } from './resolvers/user';
 import session, { SessionOptions } from 'express-session';
-import { MikroORM } from '@mikro-orm/core';
-import microConfig from "./mikro-orm.config";
 import cors from 'cors';
 import connectRedis from 'connect-redis';
 import Redis from 'ioredis';
+import { createConnection } from 'typeorm';
 
 import { __prod__, COOKIE_NAME } from './constants';
 import { User } from './entities/User';
+import { Post } from './entities/Post';
 
 
 const main = async () => {
-
-  const orm = await MikroORM.init(microConfig);
-  // clean user table
-  // await orm.em.nativeDelete(User, { })
-  await orm.getMigrator().up();
+  const conn = await createConnection({
+    type: 'postgres',
+    database: 'postgres',
+    username: 'postgres',
+    password: 'postgres',
+    logging: true,
+    synchronize: true,
+    entities: [Post, User]
+  });
 
   const RedisStore = connectRedis(session);
   const redis = new Redis();
@@ -62,7 +66,7 @@ const main = async () => {
       resolvers: [HelloResolver, PostResolver, UserResolver],
       validate: false
     }),
-    context: ({ req, res }) => ({ em: orm.em, req, res, redis })
+    context: ({ req, res }) => ({ req, res, redis })
   });
 
   apolloServer.applyMiddleware({ app, cors: false })
