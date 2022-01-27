@@ -32,11 +32,6 @@ export const NavBar: React.FC<NavBarProps> = ({}) => {
   } else {
     body = (
       <Flex zIndex={1} position="sticky" bg="tan" p={4} top="0">
-        <Box mr={2}>
-          <NextLink href="/create-post">
-            <Link color='white' mr={2}>Create Post</Link>
-          </NextLink>
-        </Box>
         <Box mr={2}>{data.me.username}</Box>
         <Button variant="link" onClick={() => {
           logout();
