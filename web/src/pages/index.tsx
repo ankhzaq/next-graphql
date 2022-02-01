@@ -4,19 +4,44 @@ import { createUrqlClient } from '../utils/createUrqlClient';
 import { usePostsQuery } from '../generated/graphql';
 import Layout from '../components/Layout';
 import NextLink from 'next/link';
-import { Link } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Link, Stack, Text } from '@chakra-ui/react';
 
 const Index = () => {
-  const [{ data }] = usePostsQuery();
+  const [{ data, fetching }] = usePostsQuery({
+    variables: {
+      limit: 10
+    }
+  });
+
+  if (!fetching && !data) {
+    return <div> you got query failed for some reason</div>;
+  }
+
   return (
     <Layout>
-      <NextLink href="/create-post">
-        <Link>
-          create post
-        </Link>
-      </NextLink>
+      <Flex>
+        <Heading>LiReedit</Heading>
+        <NextLink href="/create-post">
+          <Link ml="auto">
+            create post
+          </Link>
+        </NextLink>
+      </Flex>
+
       <br />
-      {!data ? <div>Loading...</div> : data.posts.map(p => <div key={p.id}>{p.title}</div>)}
+      <Stack spacing={8}>
+        {!data && fetching ? (
+          <div>Loading...</div>
+        ) : data!.posts.map(p => (
+          <Box key={p.id} p={5} shadow="md" borderWidth="1px">
+            <Heading fontSize="xl">{p.title}</Heading>
+            <Text t={4}>{p.textSnippet}</Text>
+          </Box>
+        ))}
+      </Stack>
+      { data ?<Flex m="auto" my={8}>
+        <Button isLoading={fetching}>load more...</Button>
+      </Flex> : null}
     </Layout>
   )
 }

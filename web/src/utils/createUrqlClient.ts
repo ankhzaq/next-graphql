@@ -1,5 +1,5 @@
 import { debugExchange, Exchange, fetchExchange } from 'urql';
-import { cacheExchange } from '@urql/exchange-graphcache';
+import { cacheExchange, Resolver } from '@urql/exchange-graphcache';
 import { LoginMutation, LogoutMutation, MeDocument, MeQuery, RegisterMutation } from '../generated/graphql';
 import betterUpdateQuery from './betterUpdateQuery';
 import { pipe, tap } from 'wonka';
@@ -16,10 +16,28 @@ export const errorExchange: Exchange = ({ forward }) => ops$ => {
   );
 }
 
+export const cursorPagination = ( cursorArgument = "cursor"): Resolver => {
+  return (_parent, fieldArgs, cache, info) => {
+    const { parentKey: entityKey, fieldName } = info;
+
+    const allFields = cache.inspectFields(entityKey);
+    const fieldInfos = allFields.filter((info) => info.fieldName === fieldName);
+    const size = fieldInfos.length;
+    if (size === 0) {
+      return undefined;
+    }
+  }
+}
+
 export const createUrqlClient = (ssrExchange: any) => ({
   url: "http://localhost:4000/graphql",
   fetchOptions: { credentials: "include" as const },
   exchanges: [debugExchange, cacheExchange({
+    resolvers: {
+      Query: {
+        posts: cursorPagination()
+      }
+    },
     updates: {
       Mutation: {
         logout: (_result, args, cache: Cache, info) => {
