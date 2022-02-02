@@ -1,4 +1,4 @@
-import { debugExchange, Exchange, fetchExchange } from 'urql';
+import { debugExchange, Exchange, fetchExchange, stringifyVariables } from 'urql';
 import { cacheExchange, Resolver } from '@urql/exchange-graphcache';
 import { LoginMutation, LogoutMutation, MeDocument, MeQuery, RegisterMutation } from '../generated/graphql';
 import betterUpdateQuery from './betterUpdateQuery';
@@ -26,6 +26,15 @@ export const cursorPagination = ( cursorArgument = "cursor"): Resolver => {
     if (size === 0) {
       return undefined;
     }
+    const fieldKey = `${fieldName}(${stringifyVariables(fieldArgs)})`;
+    const isInInTheCache = cache.resolveFieldByKey(entityKey, fieldKey);
+    info.partial = !isInInTheCache;
+    const results: string [] = [];
+    fieldInfos.forEach((fi) => {
+      const data = cache.resolveFieldByKey(entityKey, fi.fieldKey) as string[];
+      results.push(...data);
+    });
+    return results;
   }
 }
 
