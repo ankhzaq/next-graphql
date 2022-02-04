@@ -2,7 +2,7 @@ import {
   Arg,
   Ctx,
   Field,
-  FieldResolver,
+  FieldResolver, Info,
   InputType,
   Int,
   Mutation, ObjectType,
@@ -45,7 +45,8 @@ export class PostResolver {
   @Query(() => PaginatedPosts)
   async posts(
     @Arg('limit', () => Int) limit: number,
-    @Arg('cursor', () => String, { nullable: true }) cursor: string
+    @Arg('cursor', () => String, { nullable: true }) cursor: string | null,
+    @Info() info: any
   ): Promise<PaginatedPosts> {
     // await sleep(3000);
     // return Post.find()
@@ -53,16 +54,39 @@ export class PostResolver {
     // limit +1 to know if there are more posts or not.
     const realLimit = Math.min(50, limit) + 1;
     const realLimitPlusOne = realLimit + 1;
-    const qb = getConnection()
+
+    const replacements: any[] = [realLimitPlusOne];
+
+    if (cursor) {
+      replacements.push(new Date(parseInt(cursor, 10)));
+    }
+
+    const posts = await getConnection().query(`
+      select p.*, 
+      json_build_object(
+      'id', u.id,
+      'username', u.username,
+      'email', u.email,
+      'createdAt', u."createdAt",
+      'updatedAt', u."updatedAt"
+      ) creator
+      from post p inner join public.user u on u.id = p."creatorId" 
+      ${cursor ? `where p."createdAt" < $2` : ''} 
+      order by p."createdAt" DESC limit $1
+      `, replacements);
+
+    /*const qb = getConnection()
       .getRepository(Post)
       .createQueryBuilder("p")
-      .orderBy('"createdAt"', "DESC")
+      // .innerJoinAndSelect('p.creator", "u", "u.id = p."creatorId"')
+      .orderBy('p."createdAt"', "DESC")
       .take(realLimitPlusOne);
+
     if (cursor) {
       qb.where('"createdAt" < :cursor', { cursor: new Date(parseInt(cursor, 10)) });
     }
 
-    const posts = await qb.getMany();
+    const posts = await qb.getMany();*/
 
     return { posts: posts.slice(0, realLimit), hasMore: posts.length === realLimitPlusOne };
   }
