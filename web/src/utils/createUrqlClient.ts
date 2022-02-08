@@ -41,6 +41,7 @@ export const cursorPagination = ( cursorArgument = "cursor"): Resolver => {
       posts.push(...data);
     });
     return {
+      __typename: "PaginatedPosts",
       hasMore,
       posts
     };
@@ -56,11 +57,19 @@ export const createUrqlClient = (ssrExchange: any) => ({
     },
     resolvers: {
       Query: {
-        ...cursorPagination()
+        posts: cursorPagination()
       }
     },
     updates: {
       Mutation: {
+        createPost: (_result, args, cache: Cache, info) => {
+          const allFields = cache.inspectFields('Query');
+          const fieldInfos = allFields.filter((info) => info.fieldName === 'posts');
+          fieldInfos.forEach((fi) => {
+            // invalidate the cache to show the new data without refresh
+            cache.invalidate('Query', 'posts', fi.arguments || {});
+          })
+        },
         logout: (_result, args, cache: Cache, info) => {
           betterUpdateQuery<LogoutMutation, MeQuery>(cache, {query: MeDocument}, _result, () => ({ me: null }));
         },
