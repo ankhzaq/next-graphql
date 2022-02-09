@@ -1,32 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Flex, Heading, IconButton, Text } from '@chakra-ui/react';
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
-import { PostsQuery } from '../generated/graphql';
+import { PostSnippetFragment, PostsQuery, useVoteMutation } from '../generated/graphql';
 
 interface UpdootSectionProps {
-  p: PostsQuery['posts']['posts'][0]
+  post: PostSnippetFragment
 }
 
-export const UpdootSection: React.FC<UpdootSectionProps> = ({ p }) => {
+export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
+  const [loadingState, setLoadingState] = useState<'updoot-loading' | 'downdoot-loading' | 'not-loading'>('not-loading');
+  const [, vote] = useVoteMutation();
   return (
-    <Flex key={p.id} p={5} shadow="md" borderWidth="1px">
+    <Flex key={post.id} p={5} shadow="md" borderWidth="1px">
       <Flex direction="column" alignItems="center" mr={4}>
         <IconButton
           aria-label='updoot post'
           icon={<ChevronUpIcon />}
+          isLoading={loadingState === 'updoot-loading'}
+          onClick={async () => {
+            setLoadingState('updoot-loading');
+            await vote({ postId: post.id, value: 1 });
+            setLoadingState('not-loading');
+          }}
           size="24px"
         />
-        {p.points}
+        {post.points}
         <IconButton
           aria-label='downdoot post'
           icon={<ChevronDownIcon />}
+          isLoading={loadingState === 'downdoot-loading'}
+          onClick={async () => {
+            setLoadingState('downdoot-loading');
+            await vote({ postId: post.id, value: -1 });
+            setLoadingState('not-loading');
+          }}
           size="24px"
         />
       </Flex>
       <Box>
-        <Heading fontSize="xl">{p.title}</Heading>
-        <Text>Posted by {p.creator.username}</Text>
-        <Text t={4}>{p.textSnippet}</Text>
+        <Heading fontSize="xl">{post.title}</Heading>
+        <Text>Posted by {post.creator.username}</Text>
+        <Text t={4}>{post.textSnippet}</Text>
       </Box>
     </Flex>
   );

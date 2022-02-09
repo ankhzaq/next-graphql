@@ -34,8 +34,8 @@ const Index = () => {
       <Stack spacing={8}>
         {!data && fetching ? (
           <div>Loading...</div>
-        ) : data!.posts.posts.map(p => (
-          <UpdootSection p={p} />
+        ) : data!.posts.posts.map(post => (
+          <UpdootSection post={post} />
         ))}
       </Stack>
       { data && data.posts.hasMore ?<Flex m="auto" my={8}>
