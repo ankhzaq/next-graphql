@@ -10,7 +10,6 @@ interface UpdootSectionProps {
 export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
   const [loadingState, setLoadingState] = useState<'updoot-loading' | 'downdoot-loading' | 'not-loading'>('not-loading');
   const [, vote] = useVoteMutation();
-  console.log("post: ", post);
   return (
     <Flex key={post.id} p={5} shadow="md" borderWidth="1px">
       <Flex direction="column" alignItems="center" mr={4}>
@@ -35,7 +34,7 @@ export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
           icon={<ChevronDownIcon />}
           isLoading={loadingState === 'downdoot-loading'}
           onClick={async () => {
-            if (post.voteStatus === 1) {
+            if (post.voteStatus !== -1) {
               setLoadingState('downdoot-loading');
               await vote({ postId: post.id, value: -1 });
               setLoadingState('not-loading');
