@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Box, Flex, Heading, IconButton, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, IconButton, Link, Text } from '@chakra-ui/react';
+import NextLink from 'next/link';
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
+
 import { PostSnippetFragment, PostsQuery, useVoteMutation } from '../generated/graphql';
 
 interface UpdootSectionProps {
@@ -44,7 +46,11 @@ export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
         />
       </Flex>
       <Box>
-        <Heading fontSize="xl">{post.title}</Heading>
+        <NextLink href="/post/[id]" as={`/post/${post.id}`}>
+          <Link>
+            <Heading fontSize="xl">{post.title}</Heading>
+          </Link>
+        </NextLink>
         <Text>Posted by {post.creator.username}</Text>
         <Text t={4}>{post.textSnippet}</Text>
       </Box>
