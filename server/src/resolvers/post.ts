@@ -170,24 +170,38 @@ export class PostResolver {
   }
 
   @Mutation(() => Post, { nullable: true })
+  @UseMiddleware(isAuth)
   async updatePost(
     @Arg("id", () => Int) id: number,
-    @Arg("title", () => String, { nullable: true }) title: string
+    @Arg("title") title: string,
+    @Arg("text") text: string
+    // @Ctx() { req }: MyContext
   ): Promise<Post | null> {
+    // return Post.update({id, creatorId: req.session.userId }, { title, text });
     const post = await Post.findOne(id);
     if (!post) return null;
-    if (typeof title !== 'undefined') {
-      await Post.update({id}, { title });
-    }
+    await Post.update({id}, { title, text });
     return post;
   }
 
   @Mutation(() => Boolean)
+  @UseMiddleware(isAuth)
   async deletePost(
-    @Arg("id", () => Int) id: number
+    @Arg("id", () => Int) id: number,
+    @Ctx() { req }: MyContext
   ): Promise<Boolean | null> {
     try {
-      await Post.delete(id);
+      /* WITHOUT CASCADE ACTIVATED ON UPDOOT ENTITY
+      const post = await Post.findOne(id);
+      if (!post) {
+        return false
+      }
+      if (post.creatorId !== req.session.userId) {
+        throw new Error('not authorized')
+      }
+      await Updoot.delete({ postId: id });
+     */
+      await Post.delete({ id, creatorId: req.session.userId });
       return true;
     } catch(error) {
       return false;

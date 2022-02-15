@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Flex, Heading, IconButton, Link, Text } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, ChevronUpIcon, DeleteIcon } from '@chakra-ui/icons';
 
-import { PostSnippetFragment, PostsQuery, useVoteMutation } from '../generated/graphql';
+import { PostSnippetFragment, PostsQuery, useDeletePostMutation, useVoteMutation } from '../generated/graphql';
 
 interface UpdootSectionProps {
   post: PostSnippetFragment
@@ -12,6 +12,7 @@ interface UpdootSectionProps {
 export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
   const [loadingState, setLoadingState] = useState<'updoot-loading' | 'downdoot-loading' | 'not-loading'>('not-loading');
   const [, vote] = useVoteMutation();
+  const [, deletePost] = useDeletePostMutation();
   return (
     <Flex key={post.id} p={5} shadow="md" borderWidth="1px">
       <Flex direction="column" alignItems="center" mr={4}>
@@ -45,14 +46,20 @@ export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
           size="24px"
         />
       </Flex>
-      <Box>
+      <Box flex={1}>
         <NextLink href="/post/[id]" as={`/post/${post.id}`}>
           <Link>
             <Heading fontSize="xl">{post.title}</Heading>
           </Link>
         </NextLink>
         <Text>Posted by {post.creator.username}</Text>
-        <Text t={4}>{post.textSnippet}</Text>
+
+        <Flex align="center">
+          <Text flex={1} mt={4}>{post.textSnippet}</Text>
+          <IconButton icon={<DeleteIcon />} aria-label="Delete post" onClick={() => {
+            deletePost({ id: post.id });
+          }} colorScheme="red" />
+        </Flex>
       </Box>
     </Flex>
   );

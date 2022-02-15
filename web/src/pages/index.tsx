@@ -21,20 +21,11 @@ const Index = () => {
 
   return (
     <Layout>
-      <Flex>
-        <Heading>LiReedit</Heading>
-        <NextLink href="/create-post">
-          <Link ml="auto">
-            create post
-          </Link>
-        </NextLink>
-      </Flex>
-
       <br />
       <Stack spacing={8}>
         {!data && fetching ? (
           <div>Loading...</div>
-        ) : data!.posts.posts.map(post => (
+        ) : data!.posts.posts.map(post => !post ? null : (
           <UpdootSection post={post} />
         ))}
       </Stack>

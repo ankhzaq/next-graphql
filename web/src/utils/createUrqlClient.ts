@@ -1,6 +1,7 @@
 import { debugExchange, dedupExchange, Exchange, fetchExchange, stringifyVariables } from 'urql';
 import { cacheExchange, Resolver } from '@urql/exchange-graphcache';
 import {
+  DeletePostMutationVariables,
   LoginMutation,
   LogoutMutation,
   MeDocument,
@@ -79,8 +80,10 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
       },
       updates: {
         Mutation: {
+          deletePost: (_result, args, cache, info) => {
+            cache.invalidate({ __typename: "Post", id: (args as DeletePostMutationVariables).id })
+          },
           vote: (_result, args, cache, info) => {
-
             const { postId, value } = args as VoteMutationVariables;
             const data = cache.readFragment(
               gql`
@@ -109,7 +112,7 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
               );
             }
           },
-          createPost: (_result, args, cache: Cache, info) => {
+          createPost: (_result, args, cache, info) => {
             const allFields = cache.inspectFields('Query');
             const fieldInfos = allFields.filter((info) => info.fieldName === 'posts');
             fieldInfos.forEach((fi) => {
