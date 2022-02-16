@@ -16,6 +16,7 @@ import { MyContext } from '../types';
 import { isAuth } from '../middleware/isAuth';
 import { getConnection } from 'typeorm';
 import { Updoot } from '../entities/Updoot';
+import { create } from 'domain';
 
 @InputType()
 class PostInput {
@@ -174,14 +175,17 @@ export class PostResolver {
   async updatePost(
     @Arg("id", () => Int) id: number,
     @Arg("title") title: string,
-    @Arg("text") text: string
-    // @Ctx() { req }: MyContext
+    @Arg("text") text: string,
+    @Ctx() { req }: MyContext
   ): Promise<Post | null> {
-    // return Post.update({id, creatorId: req.session.userId }, { title, text });
-    const post = await Post.findOne(id);
-    if (!post) return null;
-    await Post.update({id}, { title, text });
-    return post;
+    const result = await getConnection()
+      .createQueryBuilder()
+      .update(Post)
+      .set({ title, text })
+      .where('id = :id and "creatorId" = :creatorId', { id, creatorId: req.session.userId })
+      .returning('*')
+      .execute();
+    return result.raw[0];
   }
 
   @Mutation(() => Boolean)
