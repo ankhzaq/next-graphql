@@ -10,6 +10,7 @@ import {
   useMeQuery,
   useVoteMutation
 } from '../generated/graphql';
+import EditDeletePostButtonsProps from './EditDeletePostButtonsProps';
 
 interface UpdootSectionProps {
   post: PostSnippetFragment
@@ -18,10 +19,7 @@ interface UpdootSectionProps {
 export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
   const [loadingState, setLoadingState] = useState<'updoot-loading' | 'downdoot-loading' | 'not-loading'>('not-loading');
   const [, vote] = useVoteMutation();
-  const [, deletePost] = useDeletePostMutation();
   const [{ data: meData }] = useMeQuery();
-  console.log("post", post);
-  console.log("meData", meData);
   return (
     <Flex key={post.id} p={5} shadow="md" borderWidth="1px">
       <Flex direction="column" alignItems="center" mr={4}>
@@ -65,15 +63,7 @@ export const UpdootSection: React.FC<UpdootSectionProps> = ({ post }) => {
 
         <Flex align="center">
           <Text flex={1} mt={4}>{post.textSnippet}</Text>
-          { meData?.me?.id === post.creator.id ? <Box ml="auto">
-            <NextLink href="/post/edit/[id]" as={`/post/edit/${post.id}`}>
-              <IconButton mr={4} icon={<EditIcon/>} aria-label="Delete post" />
-            </NextLink>
-
-            <IconButton icon={<DeleteIcon/>} aria-label="Edit post" onClick={() => {
-              deletePost({id: post.id});
-            }} colorScheme="red"/>
-          </Box> : null}
+          <EditDeletePostButtonsProps id={post.id} creatorId={post.creator.id} />
         </Flex>
       </Box>
     </Flex>

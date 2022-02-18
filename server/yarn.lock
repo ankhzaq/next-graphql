@@ -961,6 +961,11 @@ cssfilter@0.0.10:
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/cssfilter/-/cssfilter-0.0.10.tgz"
   integrity sha1-xtJnJjKi5cg+AT5oZKQs6N79IK4=
 
+dataloader@^2.0.0:
+  version "2.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/dataloader/-/dataloader-2.0.0.tgz#41eaf123db115987e21ca93c005cd7753c55fe6f"
+  integrity sha1-QerxI9sRWYfiHKk8AFzXdTxV/m8=
+
 debug@2.6.9:
   version "2.6.9"
   resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/debug/-/debug-2.6.9.tgz"

@@ -17,6 +17,8 @@ import { __prod__, COOKIE_NAME } from './constants';
 import { User } from './entities/User';
 import { Post } from './entities/Post';
 import { Updoot } from './entities/Updoot';
+import { createCreatorLoader } from './utils/CreatorLoader';
+import { createUpdootLoader } from './utils/createUpdootLoader';
 
 
 const main = async () => {
@@ -72,7 +74,7 @@ const main = async () => {
       resolvers: [HelloResolver, PostResolver, UserResolver],
       validate: false
     }),
-    context: ({ req, res }) => ({ req, res, redis })
+    context: ({ req, res }) => ({ req, res, redis, userLoader: createCreatorLoader(), updootLoader: createUpdootLoader() })
   });
 
   apolloServer.applyMiddleware({ app, cors: false })

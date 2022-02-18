@@ -45,7 +45,7 @@ export const EditPost = ({ }) => {
             <Box mt={4}>
               <InputField name="text" placeholder="text..." label="Body" textarea />
             </Box>
-            <Button mt={4} type="submit" isLoading={isSubmitting} variant="teal">Edit Post</Button>
+            <Button mt={4} type="submit" isLoading={isSubmitting} variant="teal">Update Post</Button>
           </Form>
         )}
       </Formik>
