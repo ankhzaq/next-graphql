@@ -1,5 +1,6 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
 
+// @ts-ignore
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>

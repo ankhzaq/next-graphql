@@ -73,7 +73,7 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
     cookie = ctx?.req?.headers?.cookie;
   }
   return ({
-    url: "http://localhost:4000/graphql",
+    url: "https://reddit-graphql-server.herokuapp.com/graphql",
     fetchOptions: {
       credentials: "include" as const,
       headers: cookie ? { cookie, } : undefined,
@@ -125,9 +125,11 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
             invalidateAllPosts(cache);
           },
           logout: (_result, args, cache: Cache, info) => {
+            // @ts-ignore
             betterUpdateQuery<LogoutMutation, MeQuery>(cache, {query: MeDocument}, _result, () => ({ me: null }));
           },
           login: (_result, args, cache: Cache, info) => {
+            // @ts-ignore
             betterUpdateQuery<LoginMutation, MeQuery>(cache, {query: MeDocument}, _result, (result, query) => {
               if (result.login.errors) {
                 return query;
@@ -138,11 +140,15 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
             invalidateAllPosts(cache);
           },
           register: (_result: RegisterMutation, args, cache, info) => {
+            // @ts-ignore
             cache.updateQuery({ query: MeDocument }, (data: MeQuery) => {});
+            // @ts-ignore
             betterUpdateQuery<LoginMutation, MeQuery>(cache, {query: MeDocument}, _result, (result, query) => {
+              // @ts-ignore
               if (result.register.errors) {
                 return query;
               } else {
+                // @ts-ignore
                 return {me: result.register.user};
               }
             });

@@ -3,7 +3,7 @@ import { Formik, Form } from 'formik';
 import { Box, Button, Flex, Link } from '@chakra-ui/react';
 import { Wrapper } from '../components/Wrapper';
 import InputField from '../components/InputField';
-import NextLink from 'next/Link';
+import NextLink from 'next/link';
 import { useLoginMutation } from '../generated/graphql';
 import { toErrorMap } from '../utils/toErrorMap';
 import { createUrqlClient } from '../utils/createUrqlClient';
