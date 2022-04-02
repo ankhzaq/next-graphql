@@ -23,21 +23,21 @@ import { createUpdootLoader } from './utils/createUpdootLoader';
 
 const main = async () => {
   const conn = await createConnection({
+    host: 'kandula.db.elephantsql.com',
     type: 'postgres',
-    database: 'postgres',
-    username: 'postgres',
-    password: 'postgres',
+    database: 'umwjsgut',
+    username: 'umwjsgut',
+    password: 'Sng9yOdKcdshNr_VYtKmE-7cQPl_xHhd',
     logging: true,
     synchronize: true,
-    migrations: [path.join(__dirname, "./migrations/*")],
     entities: [Post, User, Updoot]
   });
 
-  // await Post.delete({});
   await conn.runMigrations();
 
   const RedisStore = connectRedis(session);
-  const redis = new Redis();
+
+  const redis = new Redis(process.env.REDIS_URL || '');
 
   const cookieOptions: SessionOptions = {
     name: COOKIE_NAME,
@@ -47,27 +47,26 @@ const main = async () => {
     }),
     cookie: {
       maxAge: 1000 * 60 * 60 * 24 * 365 * 10, // 10 years
-      httpOnly: true,
-      sameSite: 'lax', // csrf
-      secure: __prod__ // cookie only works in https
+      path: "/",
+      // httpOnly: true,
+      // sameSite: 'lax', // csrf
+      secure: true // cookie only works in https
     },
-    saveUninitialized: false,
+    saveUninitialized: true,
     secret: 'qweklnasduioqwecdsak12das',
     resave: false
   };
 
   const app = express();
-
-  app.use(
-    cors({
-      origin: 'http://localhost:3000',
-      credentials: true
-    })
-  )
+  app.set("trust proxy", 1);
+  app.use(cors({
+    origin: 'https://reddit-next-app.herokuapp.com',
+    credentials: true,
+  }))
 
   app.use(
     session(cookieOptions)
-  )
+  );
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
@@ -79,7 +78,7 @@ const main = async () => {
 
   apolloServer.applyMiddleware({ app, cors: false })
 
-  app.listen(4000, () => {
+  app.listen(process.env.PORT || 4000, () => {
     console.log('server started on localhost:4000');
   })
 

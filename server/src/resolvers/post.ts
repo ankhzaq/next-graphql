@@ -2,7 +2,7 @@ import {
   Arg,
   Ctx,
   Field,
-  FieldResolver, Info,
+  FieldResolver,
   InputType,
   Int,
   Mutation, ObjectType,
@@ -16,8 +16,7 @@ import { MyContext } from '../types';
 import { isAuth } from '../middleware/isAuth';
 import { getConnection } from 'typeorm';
 import { Updoot } from '../entities/Updoot';
-import { create } from 'domain';
-import { User } from '../entities/User';
+import { getCreator } from './user';
 
 @InputType()
 class PostInput {
@@ -56,11 +55,13 @@ export class PostResolver {
   @FieldResolver(() => Int, { nullable: true })
   async voteStatus(@Root() post: Post, @Ctx() { updootLoader, req }: MyContext) {
 
-    if (!req.session.userId) {
+    const userId = getCreator(req);
+
+    if (!userId) {
       return null;
     }
 
-    const updoot = await updootLoader.load({ postId: post.id, userId: req.session.userId });
+    const updoot = await updootLoader.load({ postId: post.id, userId });
 
     return updoot ? updoot.value : null;
   }
@@ -74,7 +75,7 @@ export class PostResolver {
     ) {
     const isUpdoot = value !== -1;
     const realValue = isUpdoot ? 1 : -1;
-    const { userId } = req.session;
+    const userId = getCreator(req);
 
     const updoot = await Updoot.findOne({ where: { postId, userId } });
     if (updoot && updoot.value !== realValue) {
@@ -162,7 +163,7 @@ export class PostResolver {
     @Arg("input") input: PostInput,
     @Ctx() { req }: MyContext
   ): Promise<Post> {
-    return Post.create({ ...input, creatorId: req.session.userId }).save();
+    return Post.create({ ...input, creatorId: getCreator(req) }).save();
   }
 
   @Mutation(() => Post, { nullable: true })
@@ -177,7 +178,7 @@ export class PostResolver {
       .createQueryBuilder()
       .update(Post)
       .set({ title, text })
-      .where('id = :id and "creatorId" = :creatorId', { id, creatorId: req.session.userId })
+      .where('id = :id and "creatorId" = :creatorId', { id, creatorId: getCreator(req) })
       .returning('*')
       .execute();
     return result.raw[0];
@@ -190,7 +191,7 @@ export class PostResolver {
     @Ctx() { req }: MyContext
   ): Promise<Boolean | null> {
     try {
-      await Post.delete({ id, creatorId: req.session.userId });
+      await Post.delete({ id, creatorId: getCreator(req) });
       return true;
     } catch(error) {
       return false;

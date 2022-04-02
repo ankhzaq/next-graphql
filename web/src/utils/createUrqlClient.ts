@@ -19,7 +19,8 @@ export const errorExchange: Exchange = ({ forward }) => ops$ => {
   return pipe(
     forward(ops$),
     tap(({ error }) => {
-      if (error?.message.includes("not authenticated")) {
+      if (error?.message.includes("not authenticated") && parseInt(process.env.HEROKU_FIX_USER || "")) {
+        console.log("NOT HEROKU");
         Router.replace("/login");
       }
     })
@@ -72,6 +73,7 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
   if (isServer()) {
     cookie = ctx?.req?.headers?.cookie;
   }
+  // for localhost -> url: "http://localhost:4000/graphql",
   return ({
     url: "https://reddit-graphql-server.herokuapp.com/graphql",
     fetchOptions: {
@@ -93,6 +95,7 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
             cache.invalidate({ __typename: "Post", id: (args as DeletePostMutationVariables).id })
           },
           vote: (_result, args, cache, info) => {
+            console.log("vote mutation");
             const { postId, value } = args as VoteMutationVariables;
             const data = cache.readFragment(
               gql`
@@ -104,7 +107,7 @@ export const createUrqlClient = (ssrExchange: any, ctx: any) => {
               `,
               { id: postId } as any
             );
-
+            debugger;
             if (data) {
               if (data.voteStatus === value) {
                 return;
